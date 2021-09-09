@@ -10,5 +10,16 @@
         height: 120px;
         margin: 0 auto;
         position: relative;
+        border-bottom: 1px solid #bbb;
+
+        h1{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            a{
+                font: bold 24px/1 'arial';
+                color: #777;
+            }
+        }
     }
 }
