@@ -7,7 +7,7 @@
 
     .inner{
         width: 1180px;
-        height: 120px;
+        height: 100px;
         margin: 0 auto;
         position: relative;
         border-bottom: 1px solid #bbb;
@@ -19,6 +19,20 @@
             a{
                 font: bold 24px/1 'arial';
                 color: #777;
+            }
+        }
+
+        .menuWeb{
+            ul{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                li{
+                    display: inline-block;
+                    margin-left: 20px;
+
+                }
             }
         }
     }
