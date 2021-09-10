@@ -75,4 +75,15 @@ fieldset {
   height: calc(100vh - 90px);
   background: lightcyan; }
 
+#footer {
+  width: 100%;
+  padding: 80px 0px; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner .wrap {
+      width: 100%; }
+      #footer .inner .wrap .bottom {
+        text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
