@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass&family=Oxygen&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,20 +30,49 @@ fieldset {
     height: 100px;
     margin: 0 auto;
     position: relative;
-    border-bottom: 1px solid #bbb; }
+    margin-bottom: 10px; }
     #header .inner h1 {
       position: absolute;
       left: 0;
       bottom: 0; }
       #header .inner h1 a {
-        font: bold 24px/1 'arial';
-        color: #777; }
-    #header .inner .menuWeb ul {
+        font: bold 24px/1  'Open Sans', sans-serif;
+        color: #1F2120; }
+    #header .inner .menuWeb #gnb {
+      position: absolute;
+      bottom: 0;
+      right: 20%; }
+      #header .inner .menuWeb #gnb li {
+        display: inline-block;
+        margin-left: 40px;
+        display: inline-block; }
+        #header .inner .menuWeb #gnb li a {
+          font: 14px/1 'Overpass', sans-serif;
+          color: #1F2120; }
+    #header .inner .menuWeb .util {
       position: absolute;
       bottom: 0;
       right: 0; }
-      #header .inner .menuWeb ul li {
-        display: inline-block;
-        margin-left: 20px; }
+      #header .inner .menuWeb .util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb .util li {
+        float: left;
+        margin-right: 30px; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(1) a {
+          color: red; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(2) a {
+          background-color: black;
+          color: white; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(3) a {
+          color: lightskyblue; }
+        #header .inner .menuWeb .util li a {
+          color: #1F2120; }
+
+#visual {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: lightcyan; }
 
 /*# sourceMappingURL=style.css.map */
