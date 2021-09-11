@@ -29,19 +29,20 @@ fieldset {
     width: 1180px;
     height: 100px;
     margin: 0 auto;
-    position: relative;
-    margin-bottom: 10px; }
+    position: relative; }
     #header .inner h1 {
       position: absolute;
       left: 0;
-      bottom: 0; }
+      top: 50%;
+      transform: translateY(-50%); }
       #header .inner h1 a {
         font: bold 24px/1  'Open Sans', sans-serif;
         color: #1F2120; }
     #header .inner .menuWeb #gnb {
       position: absolute;
-      bottom: 0;
-      right: 20%; }
+      top: 50%;
+      right: 20%;
+      transform: translateY(-50%); }
       #header .inner .menuWeb #gnb li {
         display: inline-block;
         margin-left: 40px;
@@ -51,15 +52,16 @@ fieldset {
           color: #1F2120; }
     #header .inner .menuWeb .util {
       position: absolute;
-      bottom: 0;
-      right: 0; }
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%); }
       #header .inner .menuWeb .util::after {
         content: '';
         display: block;
         clear: both; }
       #header .inner .menuWeb .util li {
         float: left;
-        margin-right: 30px; }
+        margin-right: 35px; }
         #header .inner .menuWeb .util li:hover:nth-of-type(1) a {
           color: red; }
         #header .inner .menuWeb .util li:hover:nth-of-type(2) a {

@@ -10,13 +10,13 @@
         height: 100px;
         margin: 0 auto;
         position: relative;
-        margin-bottom: 10px;
         
 
         h1{
             position: absolute;
             left: 0;
-            bottom: 0;
+            top: 50%;
+            transform: translateY(-50%);
             a{
                 font: bold 24px/1  'Open Sans', sans-serif;
                 color: #1F2120;
@@ -27,8 +27,9 @@
             
             #gnb{
                 position: absolute;
-                bottom: 0;
+                top: 50%;
                 right: 20%;
+                transform: translateY(-50%);
             
 
                 li{
@@ -48,8 +49,9 @@
 
             .util{
                 position: absolute;
-                bottom: 0;
+                top: 50%;
                 right: 0;
+                transform: translateY(-50%);
                 &::after{
                     content: '';
                     display: block;
@@ -58,7 +60,7 @@
 
                 li{
                     float: left;
-                    margin-right: 30px;
+                    margin-right: 35px;
                     &:hover{
 
                         &:nth-of-type(1) a{
