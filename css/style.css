@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass&family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -167,37 +167,61 @@ fieldset {
 
 #footer {
   width: 100%;
-  padding: 60px 0px;
-  border-top: 1px solid #111; }
+  padding: 60px 0px 30px 0px;
+  border-top: 1px solid #e1e1e1; }
   #footer .inner {
     width: 1180px;
     margin: 0 auto;
     text-align: center; }
     #footer .inner h1 {
-      font: bold 20px/1 'Overpass', sans-serif;
-      color: #1F2120;
+      font: 20px/1 'Overpass', sans-serif;
+      color: #222222;
       margin-bottom: 20px; }
     #footer .inner .wrap {
       width: 100%; }
       #footer .inner .wrap .top {
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid #bbb;
+        border-bottom: 1px solid #e1e1e1;
         margin-bottom: 20px;
-        padding: 40px 20px; }
+        padding: 40px 15px; }
         #footer .inner .wrap .top h2 {
-          font: bold 18px/1 'Overpass', sans-serif;
-          color: #888;
+          font: bold 14px/1 'Overpass', sans-serif;
+          color: #999999;
           margin-bottom: 20px; }
+        #footer .inner .wrap .top p {
+          font: 12px/1.5 'Overpass', sans-serif;
+          color: #999999;
+          letter-spacing: 1px; }
         #footer .inner .wrap .top .first {
           width: 33.333%;
-          border-right: 1px solid #bbb; }
+          border-right: 1px solid #e1e1e1; }
+          #footer .inner .wrap .top .first address {
+            font: 12px/1.5 'Noto Sans KR';
+            color: #999999;
+            margin-right: 10px; }
         #footer .inner .wrap .top .middle {
           width: 33.333%;
-          border-right: 1px solid #bbb; }
+          border-right: 1px solid #e1e1e1; }
         #footer .inner .wrap .top .last {
           width: 33.333%; }
+          #footer .inner .wrap .top .last ul::after {
+            content: '';
+            display: block;
+            clear: both; }
+          #footer .inner .wrap .top .last ul li {
+            display: inline-block;
+            font: 12px/1 'Overpass';
+            color: #999999;
+            margin-right: 30px; }
+            #footer .inner .wrap .top .last ul li a {
+              display: block;
+              font-size: 20px;
+              color: #999999;
+              padding: 10px 0; }
       #footer .inner .wrap .bottom {
-        text-align: center; }
+        text-align: center;
+        font: 13px/1 'Overpass';
+        color: #646464; }
 
 /*# sourceMappingURL=style.css.map */
