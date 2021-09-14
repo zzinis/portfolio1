@@ -299,6 +299,120 @@ padding: 200px 0;
     }
 }
 
+/* brand */
+
+#brand {
+width: 100%;
+padding: 150px 0px;
+background-color: #f5f2ee;
+
+// background-color: #f8faec;
+
+.inner {
+    width: 1180px;
+    margin: 0 auto;
+    
+
+    h1 {
+    font: bold 24px/1 'Overpass', sans-serif;
+    color: #444;
+    margin-bottom: 40px;
+    
+
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #444;
+        margin-top: 10px;
+    }
+    } 
+    
+    .wrap {
+    width: 100%;
+    display: flex;
+    
+
+    .pic{
+        width: 49%;
+        height: 320px;
+        margin-right: 5%;
+        padding: 0px 20px;
+        img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+
+    .txt{
+        width: 49%;
+        position: relative;
+
+        >h2{
+        font: bold 21px/1 'Overpass', sans-serif;
+        color: #444;
+        margin-bottom: 40px;
+        }
+        >p{
+        font: 17px/1.2 'Overpass', sans-serif;
+        color: #555;
+        margin-bottom: 30px;
+        }
+        >a{
+        display: block;
+        width: 180px;
+        height: 30px;
+        font: bold 16px/30px 'Overpass', sans-serif;
+        color: #333;
+        position: relative;
+        transition: all 0.5s ease;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 46px;
+            height: 46px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            right: -105px;
+            top: -10px;
+            transition: all 0.5s ease;
+        }
+
+        
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 7px;
+            background: url(../img/btn_arrow.png) no-repeat center/cover;
+            background-size: cover;
+            position: absolute;
+            right: -70px;
+            top:10px;
+            transition: all 0.5s ease;
+        }
+
+        &:hover{
+
+            &::before{
+            transform:scale(1.1);
+            }
+            &::after{
+            transform:translate(10px,0);
+            }
+        }
+        }
+        
+
+    }
+
+    }
+}
+}
 
 
 #footer{
