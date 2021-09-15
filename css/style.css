@@ -287,6 +287,68 @@ fieldset {
           #brand .inner .wrap .txt > a:hover::after {
             transform: translate(10px, 0); }
 
+/* read */
+#read {
+  width: 100%;
+  padding: 150px 0; }
+  #read .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #read .inner h1 {
+      font: bold 30px/1 'Overpass', sans-serif;
+      color: #050505;
+      text-align: center;
+      margin-bottom: 20px; }
+    #read .inner > p {
+      font: 18px/1 'Overpass', sans-serif;
+      color: #212121;
+      text-align: center;
+      margin-bottom: 40px; }
+    #read .inner .wrap {
+      width: 100%; }
+      #read .inner .wrap article {
+        float: left;
+        position: relative;
+        object-fit: cover;
+        margin-bottom: 20px;
+        width: 380px;
+        margin-right: 20px; }
+        #read .inner .wrap article:nth-of-type(3) {
+          margin-right: 0; }
+        #read .inner .wrap article .pic {
+          overflow: hidden; }
+          #read .inner .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: 0.5s; }
+            #read .inner .wrap article .pic img:hover {
+              transform: scale(1.05); }
+        #read .inner .wrap article h2 {
+          font: 14px/1 'Overpass', sans-serif;
+          color: #898989;
+          margin-bottom: 20px; }
+        #read .inner .wrap article h3 {
+          font: 18px/1 'Overpass', sans-serif;
+          color: #212121;
+          margin-bottom: 20px; }
+        #read .inner .wrap article > p {
+          font: 16px/1 'Overpass', sans-serif;
+          color: #7a7a7a;
+          margin-bottom: 40px; }
+        #read .inner .wrap article a {
+          display: block;
+          width: 120px;
+          height: 30px;
+          font: 15px/30px 'Overpass', sans-serif;
+          color: #212121; }
+          #read .inner .wrap article a i {
+            margin-left: 6px;
+            vertical-align: middle; }
+          #read .inner .wrap article a:hover {
+            color: #84babd; }
+
 #footer {
   width: 100%;
   padding: 60px 0px 30px 0px;
