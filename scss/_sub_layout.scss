@@ -1,0 +1,238 @@
+@charset 'utf-8';
+
+#header_sub{
+    width: 100%;
+
+    .inner{
+        width: 1180px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        
+
+        h1{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            a{
+                font: bold 24px/1  'Open Sans', sans-serif;
+                color: #1F2120;
+            }
+        }
+
+        .menuWeb{
+            
+            #gnb{
+                position: absolute;
+                top: 50%;
+                right: 20%;
+                transform: translateY(-50%);
+            
+
+                li{
+                    display: inline-block;
+                    margin-left: 40px;
+                    display: inline-block;
+                    
+
+                    a{
+                        font: 14px/1 'Overpass', sans-serif;
+                        color: #1F2120;
+                        
+                    }
+
+                }
+            }
+
+            .util{
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+
+                li{
+                    float: left;
+                    margin-right: 35px;
+                    &:hover{
+
+                        &:nth-of-type(1) a{
+                            color: red;
+                        }
+                        &:nth-of-type(2) a{
+                            background-color: black;
+                            color: white;
+
+                        }
+                        &:nth-of-type(3) a{
+                            color: lightskyblue;
+                        }
+                    }
+
+                    a{
+                        color: #1F2120;
+
+                        
+                    }
+
+                    
+                }
+            }
+
+        }
+    }
+}
+
+/*content*/ 
+.content{
+    width: 100%;
+    padding: 0 0 100px;
+
+    .sub_visual{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+
+    >.inner{
+        width: 1180px;
+        margin: 0 auto;
+        min-height: 600px;
+        position: relative;
+        
+
+        >h1{
+            font: 30px/1 'arial'; 
+            color:#000; 
+            margin-bottom:50px; 
+            
+
+            // &::before{
+            //     content: '';
+            //     width: 25px;
+            //     height: 3px;
+            //     background-color: #219ea5;
+            //     display: block;
+            //     transform: rotate(90deg);
+            //     position: absolute;
+            //     top: 18px;
+            //     left: -10px;
+                
+            // }
+
+            span{
+                font:normal 20px/1 '맑은 고딕'; 
+                color:#aaa; 
+
+                &::before{
+                    content:'/'; margin-right:20px; margin-left:10px;  
+                }
+            }
+        }
+    }
+}
+
+
+#footer_sub{
+    width: 100%;
+    padding: 60px 0px 30px 0px;
+    border-top: 1px solid #e1e1e1;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            font: 20px/1 'Overpass', sans-serif;
+            color: #222222;
+            margin-bottom: 20px;
+
+        }
+
+        .wrap{
+            width: 100%;
+
+            .top{
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid #e1e1e1;
+                margin-bottom: 20px;
+                padding: 40px 15px;
+
+                h2{
+                    font: bold 14px/1 'Overpass', sans-serif;
+                    color: #999999;
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    font: 12px/1.5 'Overpass', sans-serif;
+                    color: #999999;
+                    letter-spacing: 1px;
+                }
+
+                .first{
+                    width: 33.333%;
+                    border-right: 1px solid #e1e1e1;
+
+                    address{
+                        font: 12px/1.5 'Noto Sans KR';
+                        color: #999999;
+                        margin-right: 10px;
+    
+                    }
+                }
+
+                .middle{
+                    width: 33.333%;
+                    border-right: 1px solid #e1e1e1;
+                }
+
+                .last{
+
+                    width: 33.333%;
+
+                    ul{
+                        &::after{
+                            content: '';
+                            display: block;
+                            clear: both;
+                        }
+                        li{
+                            display: inline-block;
+                            font: 12px/1 'Overpass';
+                            color: #999999;
+                            margin-right: 30px;
+                            
+                            
+
+                            a{
+                                display: block;
+                                font-size: 20px;
+                                color: #999999;
+                                padding: 10px 0;
+                                
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+            .bottom{
+                text-align: center;
+                font: 13px/1 'Overpass';
+                color: #646464;
+
+            }
+        }
+        
+    }
+}
