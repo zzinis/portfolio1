@@ -65,8 +65,7 @@
                             color: red;
                         }
                         &:nth-of-type(2) a{
-                            background-color: black;
-                            color: white;
+                            font-size: 18px;
 
                         }
                         &:nth-of-type(3) a{
@@ -76,6 +75,7 @@
 
                     a{
                         color: #1F2120;
+                        transition: 0.3s ease-in-out;
 
                         
                     }

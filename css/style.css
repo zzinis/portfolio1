@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -69,12 +69,12 @@ fieldset {
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(1) a {
           color: red; }
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(2) a {
-          background-color: black;
-          color: white; }
+          font-size: 18px; }
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(3) a {
           color: lightskyblue; }
         #header_sub .inner .menuWeb .util li a {
-          color: #1F2120; }
+          color: #1F2120;
+          transition: 0.3s ease-in-out; }
 
 /*content*/
 .content {
@@ -538,13 +538,13 @@ fieldset {
 #header {
   width: 100%; }
   #header .inner {
-    width: 1180px;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     position: relative; }
     #header .inner h1 {
       position: absolute;
-      left: 0;
+      left: 5%;
       top: 50%;
       transform: translateY(-50%); }
       #header .inner h1 a {
@@ -553,19 +553,19 @@ fieldset {
     #header .inner .menuWeb #gnb {
       position: absolute;
       top: 50%;
-      right: 20%;
+      right: 14%;
       transform: translateY(-50%); }
       #header .inner .menuWeb #gnb li {
         display: inline-block;
-        margin-left: 40px;
+        margin-left: 28px;
         display: inline-block; }
         #header .inner .menuWeb #gnb li a {
-          font: 14px/1 'Overpass', sans-serif;
+          font: 14px/1 'Roboto';
           color: #1F2120; }
     #header .inner .menuWeb .util {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 4%;
       transform: translateY(-50%); }
       #header .inner .menuWeb .util::after {
         content: '';
@@ -573,16 +573,13 @@ fieldset {
         clear: both; }
       #header .inner .menuWeb .util li {
         float: left;
-        margin-right: 35px; }
-        #header .inner .menuWeb .util li:hover:nth-of-type(1) a {
-          color: red; }
-        #header .inner .menuWeb .util li:hover:nth-of-type(2) a {
-          background-color: black;
-          color: white; }
+        margin-right: 30px; }
         #header .inner .menuWeb .util li:hover:nth-of-type(3) a {
-          color: lightskyblue; }
+          font: bold 14px/1 'Roboto'; }
         #header .inner .menuWeb .util li a {
-          color: #1F2120; }
+          color: #1F2120;
+          transition: 0.3s ease-in-out;
+          font: 14px/1 'Roboto'; }
 
 #visual {
   width: 90%;
