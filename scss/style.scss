@@ -665,13 +665,13 @@ background-color: #f5f2ee;
 
 #footer{
     width: 100%;
-    padding: 60px 0px 30px 0px;
+    padding: 60px 80px;
     border-top: 1px solid #e1e1e1;
 
     .inner{
-        width: 1180px;
+        width: 100%;
         margin: 0 auto;
-        text-align: center;
+
 
         h1{
             font: 20px/1 'Overpass', sans-serif;
@@ -686,9 +686,8 @@ background-color: #f5f2ee;
             .top{
                 display: flex;
                 flex-wrap: wrap;
-                border-bottom: 1px solid #e1e1e1;
                 margin-bottom: 20px;
-                padding: 40px 15px;
+                padding: 0px 40px 5px;
 
                 h2{
                     font: bold 14px/1 'Overpass', sans-serif;
@@ -702,49 +701,118 @@ background-color: #f5f2ee;
                     letter-spacing: 1px;
                 }
 
+                .text1{
+                    font: 14px/1.6 'Overpass', 'Noto Sans KR';
+                    color: #434343e6;
+                    letter-spacing: 1px;
+                    margin-bottom: 30px;
+                }
+
+                .text2{
+                    font: 13px/1.6 'Noto Sans KR';
+                    color: #434343e6;
+
+                    span{
+                        &:nth-of-type(1){
+                            display: block;
+                        }
+                    }
+                }
+
                 .first{
                     width: 33.333%;
                     border-right: 1px solid #e1e1e1;
+                    padding-right: 10px;
+                    
+                    ul{
+                        margin-bottom: 60px;
+                        li{
+                            display: inline-block;
+                            border-right: 1px solid #e1e1e1;
 
-                    address{
-                        font: 12px/1.5 'Noto Sans KR';
-                        color: #999999;
-                        margin-right: 10px;
-    
+                            &:last-child {
+                               border-right: 0px;
+                            }
+
+                            a{
+                                font: 12px/1 'Noto Sans KR';
+                                color: #444;
+                                margin-right: 10px;
+                                
+                            }
+                        }
                     }
+
+                    
+
+                    
                 }
 
                 .middle{
                     width: 33.333%;
                     border-right: 1px solid #e1e1e1;
+                    padding: 10px 0;
+
+                    h1{
+                        text-align: center;
+                        font: bold 30px/1 'Open Sans';
+                        color: #434343;
+                    }
                 }
 
                 .last{
 
                     width: 33.333%;
+                    padding-left: 20px;
+                    
 
-                    ul{
-                        &::after{
-                            content: '';
-                            display: block;
-                            clear: both;
-                        }
-                        li{
+                    h2{
+                        font: bold 30px/1 'Overpass';
+                        color: #434343;
+                        margin-bottom: 60px;
+                    }
+
+                    .box{
+                        min-height: 100px;
+                        margin-top: 30px;
+                        
+
+                        span{
+                            width: 250px;
+                            padding: 3px 10px;
+                            margin-bottom: 5px;
                             display: inline-block;
-                            font: 12px/1 'Overpass';
-                            color: #999999;
-                            margin-right: 30px;
-                            
-                            
+                            border-bottom: 1px solid #999;
 
                             a{
                                 display: block;
-                                font-size: 20px;
-                                color: #999999;
-                                padding: 10px 0;
-                                
-                                
+                                font: bold 15px/1 'arial';
+                                color: #555;
+
+                                &::after{
+                                    float: right;
+                                    content: '>';
+                                }
                             }
+
+                        
+                        }
+
+                        ul{
+                            display: none;
+                            position: absolute;
+                            top: 36px;
+                            width: 100%;
+
+                            &:hover{
+                                display: block;
+
+                            }
+
+                            
+
+
+                            
                         }
                     }
                 }
@@ -756,6 +824,7 @@ background-color: #f5f2ee;
                 font: 13px/1 'Overpass';
                 color: #646464;
 
+        
             }
         }
         
