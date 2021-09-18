@@ -40,13 +40,139 @@
     </header>
 
     <section class="content join">
-        <div class="sub_visual"></div>
-        <div class="inner">
-            <h1>Join<span>회원가입</span> </h1>
-            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+		<div class="sub_visual"></div>
+		<div class="inner">
+			<h1>회원가입</h1>
+			<p>회원가입을 하시면 다양한 정보 및 서비스를 이용하실 수 있습니다.</p>
+			<!-- 서브페이지 컨텐츠 들어가는 부분 -->
+			<div class="joinbox">
+				<div class="inner">
+					<ul>
+						<li>
+							<span>01</span>
+							회원이용약관
+						</li>
+						<li>
+							<span>02</span>
+							개인정보 입력
+						</li>
+						<li>
+							<span>03</span>
+							회원가입 완료
+						</li>
+					</ul>
+				</div>
+			</div>
 
-        </div>
-    </section>
+			<form action="/" method="post">
+				<fieldset>
+					<legend class="hidden">회원가입양식폼</legend>
+
+					<h2>
+						<label for="terms">홈페이지 이용약관</label>
+					</h2>
+
+					<textarea name="terms" id="terms" cols="30" rows="10" spellcheck="false">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores asperiores sit dignissimos voluptate consequuntur officiis, eos a tempore omnis error aperiam nam tenetur iste impedit quibusdam molestiae corporis iusto? Molestiae aliquam, repellat quisquam culpa eius consequuntur tempore ea vitae eum incidunt alias blanditiis laboriosam repudiandae iusto nesciunt in optio vero unde quibusdam est atque voluptate, dignissimos labore? Quod porro temporibus soluta, voluptatum est harum illo accusamus dolorum odit molestiae. Quam neque, magni soluta labore, laborum totam laudantium, ex ratione repellat aliquid ipsum error aliquam. Possimus, sint atque quibusdam ullam dolor ratione facilis voluptatem nisi dignissimos quasi quas, voluptas esse delectus eius hic. Ea soluta quam obcaecati amet eveniet molestiae facilis delectus tempora laboriosam, aliquid vitae modi minus, et fugiat nisi enim magni maxime dignissimos deleniti ipsa dolor autem aliquam exercitationem culpa. Perferendis ab architecto debitis, sint cum cupiditate totam natus repellendus libero voluptates maiores incidunt hic obcaecati nostrum sapiente mollitia excepturi doloribus quisquam similique molestias aliquam reprehenderit recusandae! Magni magnam minus velit. Quas laborum amet iure veniam alias itaque nemo debitis unde, tempora voluptatem harum asperiores ullam, est neque impedit perferendis pariatur similique fugit maxime ipsam dignissimos. Quo repellendus sapiente rerum hic sequi cumque qui iusto culpa ducimus soluta a maiores dignissimos dolore pariatur molestiae, officiis beatae! Fuga ut ab eos debitis incidunt perspiciatis molestiae. Temporibus, est quibusdam dolor tempora voluptatem, eligendi excepturi, quae porro sint explicabo dicta repellendus sit asperiores. Quod, quam repellat reiciendis distinctio voluptatum ab ex praesentium sapiente consectetur sunt, nihil voluptate voluptates pariatur molestias velit expedita quas beatae odio similique, error eligendi. Optio possimus recusandae dolorum. Aperiam labore corporis, dolore aliquid impedit a ipsa perspiciatis esse facere earum molestiae sunt culpa quisquam laboriosam quam placeat mollitia aut voluptate nemo quae officia exercitationem voluptatum, assumenda atque. Quia temporibus architecto culpa officia magnam assumenda nam ducimus fuga corrupti.
+					</textarea>
+					<div class="agreement">
+						<input type="radio" name="agree" id="agree">
+						<label for="agree">동의함</label>
+						<input type="radio" name="noagree" id="noagree">
+						<label for="noagree">동의안함 (동의하셔야 등록이 가능합니다)</label>
+					</div>
+
+					<h2><span>*</span>표시는 필수 입력 항목입니다.</h2>
+					<table summury="회원의 아이디, 비밀번호, 이메일 주소, 휴대전화, 전화번호, 주소, 수신동의 입력양식폼">
+						<caption class="hidden">회원정보 입력양식 테이블</caption>
+
+						<tr>
+							<th scope="row"><label for="username">이름<span>*</span></label></th>
+							<td>
+								<input type="text" name="username" id="username" placeholder="이름" required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="userid">아이디<span>*</span></label></th>
+							<td>
+								<input type="text" name="userid" id="userid" placeholder="아이디" required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd">비밀번호<span>*</span></label></th>
+							<td>
+								<input type="password" name="pwd" id="pwd"  required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="pwd2"> 비밀번호 확인<span>*</span></label></th>
+							<td>
+								<input type="password" name="pwd2" id="pwd2"  required>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="email">E-MAIL 주소</label> </th>
+							<td>
+								<input type="text" name="email" id="email" >
+								@
+								<select name="company" id="company">
+									<option value="naver">naver.com</option>
+									<option value="nate">nate.com</option>
+									<option value="daum">daum.net</option>
+
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row"><label for="phone">휴대전화</label></th>
+							<td>
+								<select name="phoneF" id="phoneF">
+									<option value="010">010</option>
+									<option value="010">011</option>
+									<option value="010">018</option>
+								</select>
+								-
+								<input type="text" name="phoneM" id="phoneM">
+								-
+								<input type="text" name="phoneB" id="phoneB">
+
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row"><label for="address">주소</label> </th>
+							<td class="address">
+								<input type="text" name="address1" id="address1">
+								<a href="#" class="btn">우편번호 검색</a>
+								<input type="text" name="address2" id="address2" >
+								<input type="text" name="address3" id="address3" >
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="sns">수신동의</label></th>
+							<td class="sns">
+								<p>관련된 정보의 이메일 수신에 동의합니다.<br></p>
+								<input type="radio" name="snsagree" id="snsagree">
+								<label for="agreeY">동의함</label>
+								<input type="radio" name="snsagree" id="snsagree">
+								<label for="agreeN">동의안함</label>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="3" >
+								<input type="submit" value="확인">
+								<input type="reset" value="취소">
+							</th>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+			<!-- 
+	폼요소 전달값 
+	name=value
+ -->
+		</div>
+	</section>
 
 
     <footer id="footer_sub">
