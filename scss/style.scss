@@ -779,10 +779,11 @@ background-color: #f5f2ee;
         margin: 0 auto;
 
 
-        h1{
+        >h1{
             font: 20px/1 'Overpass', sans-serif;
             color: #222222;
             margin-bottom: 20px;
+            display: none;
 
         }
 
@@ -962,4 +963,54 @@ background-color: #f5f2ee;
         }
     }
 
+
+
+
+
+
+    #footer{
+        padding: 60px 40px;    
+        .inner{
+    
+            >h1{
+                display: block;
+                margin-bottom: 35px;
+            }
+            .wrap{
+                .top{
+    
+                    .first{
+                        width: 49%;
+                        margin-right: 2%;
+                    }
+    
+                    .middle{
+                        display: none;
+                    }
+    
+                    .last{
+                        width: 49%;
+    
+                        .box{
+                        
+                            span{
+                                width: 220px;
+                            }
+    
+                        }
+                    }
+                }
+                
+                .bottom{
+                    margin-top: 30px;
+                }
+            }
+            
+        }
+    }
+
 }
+
+
+/*mobile*/
+ 

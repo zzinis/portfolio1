@@ -290,7 +290,24 @@ fieldset {
   #header_sub .inner .menuWeb {
     display: none; }
   #header_sub .inner .btnCall {
-    display: block; } }
+    display: block; }
+
+  #footer_sub {
+    padding: 60px 40px; }
+    #footer_sub .inner > h1 {
+      display: block;
+      margin-bottom: 35px; }
+    #footer_sub .inner .wrap .top .first {
+      width: 49%;
+      margin-right: 2%; }
+    #footer_sub .inner .wrap .top .middle {
+      display: none; }
+    #footer_sub .inner .wrap .top .last {
+      width: 49%; }
+      #footer_sub .inner .wrap .top .last .box span {
+        width: 220px; }
+    #footer_sub .inner .wrap .bottom {
+      margin-top: 30px; } }
 .department .sub_visual {
   background: url(../img/bg1.jpg) no-repeat center/cover;
   opacity: 0.7; }
@@ -1181,10 +1198,11 @@ fieldset {
   #footer .inner {
     width: 100%;
     margin: 0 auto; }
-    #footer .inner h1 {
+    #footer .inner > h1 {
       font: 20px/1 'Overpass', sans-serif;
       color: #222222;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      display: none; }
     #footer .inner .wrap {
       width: 100%; }
       #footer .inner .wrap .top {
@@ -1281,6 +1299,24 @@ fieldset {
   #header .inner .menuWeb {
     display: none; }
   #header .inner .btnCall {
-    display: block; } }
+    display: block; }
+
+  #footer {
+    padding: 60px 40px; }
+    #footer .inner > h1 {
+      display: block;
+      margin-bottom: 35px; }
+    #footer .inner .wrap .top .first {
+      width: 49%;
+      margin-right: 2%; }
+    #footer .inner .wrap .top .middle {
+      display: none; }
+    #footer .inner .wrap .top .last {
+      width: 49%; }
+      #footer .inner .wrap .top .last .box span {
+        width: 220px; }
+    #footer .inner .wrap .bottom {
+      margin-top: 30px; } }
+/*mobile*/
 
 /*# sourceMappingURL=style.css.map */
