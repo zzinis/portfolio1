@@ -780,7 +780,7 @@ background-color: #f5f2ee;
 
 
         >h1{
-            font: 20px/1 'Overpass', sans-serif;
+            font: bold 22px/1 'Overpass', sans-serif;
             color: #222222;
             margin-bottom: 20px;
             display: none;
@@ -1013,4 +1013,59 @@ background-color: #f5f2ee;
 
 
 /*mobile*/
- 
+@media screen and (max-width:539px){
+    
+
+    #footer{
+        padding: 60px 25px;    
+        .inner{
+    
+            >h1{
+                display: block;
+                margin-bottom: 35px;
+            }
+            .wrap{
+                .top{
+    
+                    .first{
+                        width: 100%;
+                        margin-right: 0%;
+                        border-right: none;
+
+                        .text1,.text2{
+                            display: none;
+                        }
+                    }
+    
+                    .middle{
+                        display: none;
+                    }
+    
+                    .last{
+                        width: 100%;
+                        padding: 0;
+                        h2{
+                            font: bold 20px/1 'Overpass';
+                            margin-bottom: 20px;
+                        }
+    
+                        .box{
+                            min-height: 50px;
+                        
+                            span{
+                                width: 200px;
+                            }
+    
+                        }
+                    }
+                }
+                
+                .bottom{
+                    margin-top: 0px;
+                }
+            }
+            
+        }
+    }
+
+}
