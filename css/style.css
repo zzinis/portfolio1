@@ -310,30 +310,30 @@ fieldset {
       margin-top: 30px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
-  #footer {
+  #footer_sub {
     padding: 60px 25px; }
-    #footer .inner > h1 {
+    #footer_sub .inner > h1 {
       display: block;
       margin-bottom: 35px; }
-    #footer .inner .wrap .top .first {
+    #footer_sub .inner .wrap .top .first {
       width: 100%;
       margin-right: 0%;
       border-right: none; }
-      #footer .inner .wrap .top .first .text1, #footer .inner .wrap .top .first .text2 {
+      #footer_sub .inner .wrap .top .first .text1, #footer_sub .inner .wrap .top .first .text2 {
         display: none; }
-    #footer .inner .wrap .top .middle {
+    #footer_sub .inner .wrap .top .middle {
       display: none; }
-    #footer .inner .wrap .top .last {
+    #footer_sub .inner .wrap .top .last {
       width: 100%;
       padding: 0; }
-      #footer .inner .wrap .top .last h2 {
+      #footer_sub .inner .wrap .top .last h2 {
         font: bold 20px/1 'Overpass';
         margin-bottom: 20px; }
-      #footer .inner .wrap .top .last .box {
+      #footer_sub .inner .wrap .top .last .box {
         min-height: 50px; }
-        #footer .inner .wrap .top .last .box span {
+        #footer_sub .inner .wrap .top .last .box span {
           width: 200px; }
-    #footer .inner .wrap .bottom {
+    #footer_sub .inner .wrap .bottom {
       margin-top: 0px; } }
 .department .sub_visual {
   background: url(../img/bg1.jpg) no-repeat center/cover;
