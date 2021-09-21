@@ -710,6 +710,21 @@ fieldset {
       font-size: 13px;
       vertical-align: top; }
 
+/* tablet ---------------------------------------------------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .join .inner table th {
+    display: none; }
+    .join .inner table th:last-child {
+      width: 100%;
+      display: block; }
+  .join .inner table input[type=text], .join .inner table input[type=password] {
+    width: 50%; }
+  .join .inner table select {
+    width: 30%; }
+  .join .inner table #comments {
+    width: 90%; }
+  .join .inner table .hobbyTxt, .join .inner table .genderTxt {
+    display: block; } }
 #header {
   width: 100%; }
   #header .inner {

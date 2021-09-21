@@ -234,3 +234,37 @@
         }
     }
 }
+
+
+/* tablet ---------------------------------------------------------------------------------*/
+@media screen and (max-width:1179px){
+    .join{        
+        .inner{  
+            table{    
+                th{
+                    display:none; 
+    
+                    &:last-child{ 
+                         width:100%; 
+                         display:block;
+                    }
+                }
+                  
+                input[type=text], input[type=password]{
+                    width:50%;                      
+                }
+                
+                select{
+                    width:30%;                      
+                }
+                #comments{
+                    width:90%;                     
+                }
+                .hobbyTxt, .genderTxt{
+                    display:block; 
+                }
+            }
+        }
+    }
+  }
+  
