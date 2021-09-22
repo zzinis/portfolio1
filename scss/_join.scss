@@ -244,12 +244,13 @@
                 th{
                     display:none; 
     
-                    &:last-child{ 
-                         width:100%; 
-                         display:block;
+                    &:last-child{
+                        
+                        width:100%; 
+                        display:block;
                     }
                 }
-                  
+                
                 input[type=text], input[type=password]{
                     width:50%;                      
                 }
@@ -266,5 +267,30 @@
             }
         }
     }
-  }
-  
+}
+
+/* mobile ---------------------------------------------------------------------------------*/
+@media screen and (max-width:539px){
+    .join{        
+        .inner{  
+            table{    
+
+                input[type=submit], input[type=reset]{
+                    width:40%; margin:0 5%; 
+                }
+                input[type=text], input[type=password]{
+                    width:100%;                      
+                }
+                
+                select{
+                    width:100%;       
+                    margin-top:10px;                
+                }
+                #comments{
+                    width:100%;                     
+                }
+
+            }
+        }
+    }
+}

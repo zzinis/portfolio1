@@ -725,6 +725,18 @@ fieldset {
     width: 90%; }
   .join .inner table .hobbyTxt, .join .inner table .genderTxt {
     display: block; } }
+/* mobile ---------------------------------------------------------------------------------*/
+@media screen and (max-width: 539px) {
+  .join .inner table input[type=submit], .join .inner table input[type=reset] {
+    width: 40%;
+    margin: 0 5%; }
+  .join .inner table input[type=text], .join .inner table input[type=password] {
+    width: 100%; }
+  .join .inner table select {
+    width: 100%;
+    margin-top: 10px; }
+  .join .inner table #comments {
+    width: 100%; } }
 #header {
   width: 100%; }
   #header .inner {
@@ -743,7 +755,7 @@ fieldset {
     #header .inner .menuWeb #gnb {
       position: absolute;
       top: 50%;
-      right: 16%;
+      right: 15%;
       transform: translateY(-50%);
       margin-right: 2%; }
       #header .inner .menuWeb #gnb li {
@@ -756,7 +768,7 @@ fieldset {
     #header .inner .menuWeb .util {
       position: absolute;
       top: 50%;
-      right: 4%;
+      right: 5%;
       transform: translateY(-50%); }
       #header .inner .menuWeb .util::after {
         content: '';
