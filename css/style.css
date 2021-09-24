@@ -1612,6 +1612,29 @@ fieldset {
   #header .inner .btnCall {
     display: block; }
 
+  /* box1*/
+  #box1 {
+    padding: 150px 50px; }
+    #box1 .inner {
+      width: 100%; }
+      #box1 .inner .wrap .txt {
+        width: 50%;
+        padding: 100px 0px; }
+        #box1 .inner .wrap .txt h1 {
+          font: 34px/1 'Overpass'; }
+        #box1 .inner .wrap .txt p {
+          font: 16px/1.4 'Overpass';
+          margin-right: 10px; }
+        #box1 .inner .wrap .txt a {
+          width: 140px;
+          height: 35px;
+          font: bold 13px/35px 'Overpass'; }
+      #box1 .inner .wrap .pic {
+        width: 50%; }
+        #box1 .inner .wrap .pic img {
+          height: 300px;
+          margin-top: 100px; }
+
   #footer {
     padding: 60px 40px; }
     #footer .inner > h1 {
