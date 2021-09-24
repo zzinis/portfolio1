@@ -562,6 +562,7 @@ fieldset {
         background: #666;
         color: #fff; }
 
+/*tablet*/
 @media screen and (max-width: 1179px) {
   .community .inner {
     width: 100%;
@@ -614,6 +615,17 @@ fieldset {
       display: none; }
     .community .inner .pagination .numbers a:nth-of-type(6), .community .inner .pagination .numbers a:nth-of-type(7), .community .inner .pagination .numbers a:nth-of-type(8), .community .inner .pagination .numbers a:nth-of-type(9), .community .inner .pagination .numbers a:nth-of-type(10) {
       display: none; } }
+/*mobile*/
+@media screen and (max-width: 539px) {
+  .community .inner {
+    padding: 0px 40px; }
+    .community .inner .box {
+      display: none; }
+    .community .inner table td {
+      padding: 16px;
+      font: 14px/1 'Open Sans'; }
+      .community .inner table td a {
+        font: 14px/1.3 'Open Sans'; } }
 .join {
   padding: 0 0 150px; }
   .join .sub_visual {
