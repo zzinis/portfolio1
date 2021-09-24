@@ -465,47 +465,50 @@ fieldset {
       background: #fff;
       color: #777; }
       .community .inner .box .wrap article > h2 {
-        font: bold 20px/1 'arial';
+        font: bold 20px/1 'Open Sans';
         margin: 10px; }
       .community .inner .box .wrap article > p {
-        padding: 30px 20px; }
+        padding: 30px 20px;
+        font: 16px/1.3 'Open Sans'; }
       .community .inner .box .wrap article .btn {
         display: inline-block;
         background: #454545;
         color: #fff;
         text-align: center;
         padding: 10px 20px;
-        font: bold 15px/1 'arial'; }
-
-.form-text {
+        font: bold 13px/1 'Open Sans'; }
+.community .inner .form-text {
   float: right;
   height: 42px;
   border-radius: 5px;
   background-color: #fff;
   margin-bottom: 20px; }
-  .form-text #searchText {
+  .community .inner .form-text::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .community .inner .form-text #searchText {
     width: 75%;
     height: 100%;
     padding: 5px 20px;
     border: 1px solid #bbb;
     border-radius: 5px;
-    font: 15px/1 'arial';
+    font: 15px/1 'Noto Sans KR';
     columns: #222;
     vertical-align: middle;
     background: transparent;
     margin-right: 1%;
     display: inline-block; }
-  .form-text .searchBtn {
+  .community .inner .form-text .searchBtn {
     display: inline-block;
     width: 20%;
     height: 100%;
-    font: bold 14px/1 'arial';
+    font: bold 14px/1 'Noto Sans KR';
     color: #fff;
     border: 1px solid #777;
     border-radius: 3px;
     background-color: #777;
     cursor: pointer; }
-
 .community .inner table {
   width: 100%;
   border-top: 2px solid #111;
@@ -559,6 +562,58 @@ fieldset {
         background: #666;
         color: #fff; }
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    width: 100%;
+    padding: 0px 50px; }
+    .community .inner .box {
+      width: 100%; }
+      .community .inner .box .wrap article {
+        width: 33.3%;
+        padding: 30px 10px; }
+        .community .inner .box .wrap article > h2 {
+          font: bold 16px/1 'Open Sans';
+          margin: 10px; }
+        .community .inner .box .wrap article > p {
+          padding: 30px 0px;
+          font: 14px/1.4 'Open Sans'; }
+        .community .inner .box .wrap article .btn {
+          padding: 10px 20px;
+          font: 13px/1 'Open Sans'; }
+    .community .inner .form-text {
+      float: right;
+      height: 42px;
+      border-radius: 5px;
+      background-color: #fff;
+      margin-bottom: 20px; }
+      .community .inner .form-text #searchText {
+        width: 75%;
+        height: 100%;
+        padding: 5px 20px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        font: 13px/1 'Noto Sans KR';
+        columns: #222;
+        vertical-align: middle;
+        background: transparent;
+        margin-right: 1%;
+        display: inline-block; }
+      .community .inner .form-text .searchBtn {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        font: 13px/1 'Noto Sans KR'; }
+    .community .inner table td {
+      padding: 20px;
+      font: 15px/1 'Open Sans'; }
+      .community .inner table td a {
+        font: 15px/1 'Open Sans'; }
+      .community .inner table td:nth-of-type(2) {
+        text-align: left; }
+    .community .inner table td:nth-of-type(4) {
+      display: none; }
+    .community .inner .pagination .numbers a:nth-of-type(6), .community .inner .pagination .numbers a:nth-of-type(7), .community .inner .pagination .numbers a:nth-of-type(8), .community .inner .pagination .numbers a:nth-of-type(9), .community .inner .pagination .numbers a:nth-of-type(10) {
+      display: none; } }
 .join {
   padding: 0 0 150px; }
   .join .sub_visual {
