@@ -1009,7 +1009,51 @@ background-color: #f5f2ee;
 
 
 
+    /* read */
 
+    #read {
+        width: 100%;
+        padding: 150px 20px;
+        .inner {
+            width: 100%;
+
+            h1{
+                font: bold 28px/1 'Overpass';
+            }
+
+            >p{
+                font: 16px/1 'Overpass';
+            }
+        
+            .wrap {
+        
+                article {
+                    width: 31.3%;
+                    margin-right: 10px;
+
+                    .pic{
+                        margin-bottom: 10px;
+                    }
+
+                    h2{
+                        font: 14px/1 'Overpass';
+                    }
+
+                    h3{
+                        font: bold 16px/1 'Overpass';
+                    }
+
+                    >p{
+                        font: 14px/1.23 'Overpass';
+                    }
+                    
+                    a{
+                        font: 14px/30px 'Overpass';
+                    }
+                }
+            }
+        }
+    }
 
     #footer{
         padding: 60px 40px;    

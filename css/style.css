@@ -1635,6 +1635,30 @@ fieldset {
           height: 300px;
           margin-top: 100px; }
 
+  /* read */
+  #read {
+    width: 100%;
+    padding: 150px 20px; }
+    #read .inner {
+      width: 100%; }
+      #read .inner h1 {
+        font: bold 28px/1 'Overpass'; }
+      #read .inner > p {
+        font: 16px/1 'Overpass'; }
+      #read .inner .wrap article {
+        width: 31.3%;
+        margin-right: 10px; }
+        #read .inner .wrap article .pic {
+          margin-bottom: 10px; }
+        #read .inner .wrap article h2 {
+          font: 14px/1 'Overpass'; }
+        #read .inner .wrap article h3 {
+          font: bold 16px/1 'Overpass'; }
+        #read .inner .wrap article > p {
+          font: 14px/1.23 'Overpass'; }
+        #read .inner .wrap article a {
+          font: 14px/30px 'Overpass'; }
+
   #footer {
     padding: 60px 40px; }
     #footer .inner > h1 {
