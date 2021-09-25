@@ -1690,6 +1690,58 @@ fieldset {
       #banner .inner p {
         font: 17px/1.4 'Open Sans'; }
 
+  /* commnet */
+  #comment {
+    width: 100%;
+    padding: 150px 20px; }
+    #comment .inner {
+      width: 100%; }
+      #comment .inner .wrap {
+        display: flex;
+        flex-wrap: wrap; }
+        #comment .inner .wrap .left {
+          width: 50%;
+          margin-right: 4%; }
+          #comment .inner .wrap .left h1 {
+            font: bold 18px/1 'Overpass';
+            margin-bottom: 40px; }
+            #comment .inner .wrap .left h1::after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: #444;
+              color: #444;
+              display: block;
+              margin-top: 10px; }
+          #comment .inner .wrap .left > a {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 16px;
+            color: #444; }
+          #comment .inner .wrap .left article {
+            width: 49%;
+            margin-bottom: 50px; }
+            #comment .inner .wrap .left article h2 {
+              font: bold 17px/1 'Overpass'; }
+            #comment .inner .wrap .left article p {
+              font: 15px/1.4 'Overpass'; }
+            #comment .inner .wrap .left article a {
+              font: 13px/30px 'Overpass'; }
+        #comment .inner .wrap .right {
+          width: 45%; }
+          #comment .inner .wrap .right h1 {
+            font: bold 18px/1 'Overpass';
+            margin-bottom: 40px; }
+          #comment .inner .wrap .right article {
+            margin-right: 5px;
+            transition: 0.5s; }
+            #comment .inner .wrap .right article:hover {
+              transform: scale(1); }
+            #comment .inner .wrap .right article > p {
+              font: bold 15px/1.5 'Overpass';
+              margin-top: 15px; }
+
   #footer {
     padding: 60px 40px; }
     #footer .inner > h1 {
