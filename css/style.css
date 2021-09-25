@@ -1745,6 +1745,40 @@ fieldset {
       margin-top: 30px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
+  /* brand */
+  #brand {
+    padding: 120px 30px; }
+    #brand .inner h1 {
+      font: bold 21px/1 'Overpass'; }
+    #brand .inner .wrap {
+      flex-wrap: wrap; }
+      #brand .inner .wrap .pic {
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+      #brand .inner .wrap .txt {
+        width: 100%;
+        text-align: center; }
+        #brand .inner .wrap .txt > h2 {
+          font: bold 19px/1.2 'Overpass';
+          margin-bottom: 20px;
+          margin-top: 20px; }
+        #brand .inner .wrap .txt > p {
+          font: 15px/1.5 'Overpass';
+          margin-bottom: 30px; }
+        #brand .inner .wrap .txt > a {
+          font: bold 15px/30px 'Overpass';
+          text-align: center;
+          display: inline-block;
+          transform: scale(1);
+          transition: 0.3s ease-in-out; }
+          #brand .inner .wrap .txt > a::before {
+            display: none; }
+          #brand .inner .wrap .txt > a::after {
+            display: none; }
+          #brand .inner .wrap .txt > a:hover {
+            transform: scale(1.1); }
+
   /* commnet */
   #comment {
     padding: 140px 40px; }

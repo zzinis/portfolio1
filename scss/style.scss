@@ -1221,50 +1221,104 @@ background-color: #f5f2ee;
 
 /*mobile*/
 @media screen and (max-width:539px){
-         /* commnet */
 
-        #comment {
+    /* brand */
+
+    #brand {
+        padding: 120px 30px;
+
+        .inner { 
+
+            h1 {
+                font: bold 21px/1 'Overpass';
+            } 
             
-            padding: 140px 40px;
-            
-            .inner {
-
-                .wrap{
-
-                    .left{
-                        width: 100%;
-                        margin-right:0%;
-    
-                        h1 {
-                            font: bold 18px/1 'Overpass';
-                            margin-bottom: 30px;
-                        }
-
-                        article{
-                            width: 100%;
-                            margin-bottom: 10px;
-                            h2{
-                                font: bold 16px/1 'Overpass';
-                            }
-    
-                            p{
-                                font: 15px/1 'Overpass';
-                                margin-bottom: 10px;
-                            }
-                        }
-    
+            .wrap {
+                flex-wrap: wrap;
+                .pic{
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .txt{
+                    width: 100%;
+                    text-align: center;
+                    >h2{
+                        font: bold 19px/1.2 'Overpass';
+                        margin-bottom: 20px;
+                        margin-top: 20px;
                     }
-                    .right{
-                        width: 100%;
+                    >p{
+                        font: 15px/1.5 'Overpass';
+                        margin-bottom: 30px;
+                    }
+                    >a{
+                        font: bold 15px/30px 'Overpass';
+                        text-align: center;
+                        display: inline-block;
+                        transform: scale(1);
+                        transition: 0.3s ease-in-out;
 
-                        article{
-                            margin-right: 5px;
+                        &::before{
+                            display: none;
+                        }
+                        
+                        &::after{
+                            display: none;
+                        }
+
+                        &:hover{
+                            transform: scale(1.1);
                         }
                     }
                 }
-            
             }
         }
+    }
+    /* commnet */
+
+    #comment {
+        
+        padding: 140px 40px;
+        
+        .inner {
+
+            .wrap{
+
+                .left{
+                    width: 100%;
+                    margin-right:0%;
+
+                    h1 {
+                        font: bold 18px/1 'Overpass';
+                        margin-bottom: 30px;
+                    }
+
+                    article{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        h2{
+                            font: bold 16px/1 'Overpass';
+                        }
+
+                        p{
+                            font: 15px/1 'Overpass';
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                }
+                .right{
+                    width: 100%;
+
+                    article{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        
+        }
+    }
 
     #footer{
         padding: 60px 25px;    
