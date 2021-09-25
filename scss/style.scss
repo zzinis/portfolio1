@@ -632,14 +632,14 @@ background-color: #f5f2ee;
         text-align: center;
 
         h1 {
-        font: bold 30px/1 'arial';
-        color: #fff;
-        margin-bottom: 20px;
+            font: bold 30px/1 'Open Sans';
+            color: #fff;
+            margin-bottom: 20px;
         }
 
         p {
-        font: 20px/1 'arial';
-        color: #fff;
+            font: 20px/1 'Open Sans';
+            color: #fff;
         }
     }
 }
@@ -1089,6 +1089,24 @@ background-color: #f5f2ee;
                         font: 14px/30px 'Overpass';
                     }
                 }
+            }
+        }
+    }
+
+    /* banner */
+
+    #banner {
+        padding: 150px 40px;
+        .inner {
+            width: 100%;
+
+            h1 {
+                font: bold 25px/1 'Open Sans';
+                margin-bottom: 30px;
+            }
+
+            p {
+                font: 17px/1.4 'Open Sans';
             }
         }
     }

@@ -1409,11 +1409,11 @@ fieldset {
     margin: 0 auto;
     text-align: center; }
     #banner .inner h1 {
-      font: bold 30px/1 'arial';
+      font: bold 30px/1 'Open Sans';
       color: #fff;
       margin-bottom: 20px; }
     #banner .inner p {
-      font: 20px/1 'arial';
+      font: 20px/1 'Open Sans';
       color: #fff; }
 
 /* commnet */
@@ -1678,6 +1678,17 @@ fieldset {
           font: 14px/1.23 'Overpass'; }
         #read .inner .wrap article a {
           font: 14px/30px 'Overpass'; }
+
+  /* banner */
+  #banner {
+    padding: 150px 40px; }
+    #banner .inner {
+      width: 100%; }
+      #banner .inner h1 {
+        font: bold 25px/1 'Open Sans';
+        margin-bottom: 30px; }
+      #banner .inner p {
+        font: 17px/1.4 'Open Sans'; }
 
   #footer {
     padding: 60px 40px; }
