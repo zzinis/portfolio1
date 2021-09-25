@@ -1692,7 +1692,6 @@ fieldset {
 
   /* commnet */
   #comment {
-    width: 100%;
     padding: 150px 20px; }
     #comment .inner {
       width: 100%; }
@@ -1705,20 +1704,6 @@ fieldset {
           #comment .inner .wrap .left h1 {
             font: bold 18px/1 'Overpass';
             margin-bottom: 40px; }
-            #comment .inner .wrap .left h1::after {
-              content: '';
-              width: 100%;
-              height: 1px;
-              background-color: #444;
-              color: #444;
-              display: block;
-              margin-top: 10px; }
-          #comment .inner .wrap .left > a {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 16px;
-            color: #444; }
           #comment .inner .wrap .left article {
             width: 49%;
             margin-bottom: 50px; }
@@ -1760,6 +1745,28 @@ fieldset {
       margin-top: 30px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
+  /* commnet */
+  #comment {
+    padding: 140px 40px; }
+    #comment .inner .wrap .left {
+      width: 100%;
+      margin-right: 0%; }
+      #comment .inner .wrap .left h1 {
+        font: bold 18px/1 'Overpass';
+        margin-bottom: 30px; }
+      #comment .inner .wrap .left article {
+        width: 100%;
+        margin-bottom: 10px; }
+        #comment .inner .wrap .left article h2 {
+          font: bold 16px/1 'Overpass'; }
+        #comment .inner .wrap .left article p {
+          font: 15px/1 'Overpass';
+          margin-bottom: 10px; }
+    #comment .inner .wrap .right {
+      width: 100%; }
+      #comment .inner .wrap .right article {
+        margin-right: 5px; }
+
   #footer {
     padding: 60px 25px; }
     #footer .inner > h1 {
