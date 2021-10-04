@@ -1122,6 +1122,25 @@ fieldset {
       #header .inner .menuMo.on {
         left: 0; }
 
+#navi {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9; }
+  #navi li {
+    margin: 20px 0; }
+    #navi li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #888;
+      transition: 0.5s; }
+      #navi li a.on {
+        background: #111;
+        height: 30px; }
+
 #visual {
   width: 90%;
   height: calc(100vh - 100px);
