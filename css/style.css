@@ -185,22 +185,22 @@ fieldset {
 
 #footer_sub {
   width: 100%;
-  padding: 60px 80px;
+  padding: 60px 0px;
   border-top: 1px solid #e1e1e1; }
   #footer_sub .inner {
-    width: 100%;
+    width: 1180px;
     margin: 0 auto; }
-    #footer_sub .inner h1 {
+    #footer_sub .inner > h1 {
       font: 20px/1 'Overpass', sans-serif;
       color: #222222;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      display: none; }
     #footer_sub .inner .wrap {
       width: 100%; }
       #footer_sub .inner .wrap .top {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-        padding: 0px 40px 5px; }
+        margin-bottom: 20px; }
         #footer_sub .inner .wrap .top h2 {
           font: bold 14px/1 'Overpass', sans-serif;
           color: #999999;
@@ -246,7 +246,7 @@ fieldset {
           width: 33.333%;
           padding-left: 20px; }
           #footer_sub .inner .wrap .top .last h2 {
-            font: bold 30px/1 'Overpass';
+            font: bold 28px/1 'Overpass';
             color: #434343;
             margin-bottom: 60px; }
           #footer_sub .inner .wrap .top .last .box {
@@ -1127,7 +1127,7 @@ fieldset {
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 9; }
+  z-index: 8; }
   #navi li {
     margin: 20px 0; }
     #navi li a {
@@ -1585,9 +1585,12 @@ fieldset {
           width: 33.333%;
           padding-left: 20px; }
           #footer .inner .wrap .top .last h2 {
-            font: bold 30px/1 'Overpass';
+            font: bold 28px/1 'Overpass';
             color: #434343;
             margin-bottom: 60px; }
+          #footer .inner .wrap .top .last p {
+            font: 14px/1.6 'Overpass', 'Noto Sans KR';
+            color: #434343e6; }
           #footer .inner .wrap .top .last .box {
             min-height: 100px;
             margin-top: 30px; }

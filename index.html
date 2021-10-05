@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/a5faf288a0.js" crossorigin="anonymous"></script>
+    <script defer src="js/scroll.js"></script>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="myScroll">
         <div class="inner">
             <h1><a href="index.html">PORTFOLIO</a></h1>
 
@@ -52,14 +53,6 @@
 
         </div>
     </header>
-
-    <ul id="navi">
-        <li><a href="#header" class="on"></a></li>
-        <li><a href="#box1"></a></li>
-        <li><a href="#brand"></a></li>
-        <li><a href="#read"></a></li>
-        <li><a href="#comment"></a></li>
-    </ul>
 
     <figure id="visual">
         <section>
@@ -112,7 +105,7 @@
     </figure>
 
     <!-- box1 -->
-	<section id="box1">
+	<section id="box1" class="myScroll">
 		<div class="inner">
 			<div class="wrap">
 				<div class="txt">
@@ -128,7 +121,7 @@
 	</section>
 
     <!-- brand -->
-	<section id="brand">
+	<section id="brand" class="myScroll">
 		<div class="inner">
 			<h1>About Brand</h1>
 			<div class="wrap">
@@ -147,7 +140,7 @@
 	</section>
     
     <!-- Read -->
-	<section id="read">
+	<section id="read" class="myScroll">
 		<div class="inner">
 			<h1>Read Our Journy</h1>
 			<p>Donec tempus risus sit amet aliquet iaculis. Integer ut pharetra lacinia</p>
@@ -189,7 +182,7 @@
 	</section>
 
     <!-- comment -->
-	<section id="comment">
+	<section id="comment" class="myScroll">
 		<div class="inner">
 			<div class="wrap">
 				<div class="left">
@@ -232,8 +225,8 @@
 	</section>
 
 
-     <!-- footer -->
-     <footer id="footer">
+    <!-- footer -->
+    <footer id="footer">
         <div class="inner">
             <h1>PORTFOLIO</h1>
             <div class="wrap">
@@ -261,10 +254,9 @@
                     </div>
                     <div class="last">
                         <h2>1234-4567</h2>
-                        <p class="text1">AM 09:00 ~ PM 18:00 / LUNCH PM 12:30 ~ PM 01:30</p>
-                        <p class="text2">
-                            <span>Kakao ID. @lorem123</span>
-                        </p>
+                        <p>AM 09:00 ~ PM 18:00 / LUNCH PM 12:30 ~ PM 01:30</p>
+                        <p>Kakao ID. @lorem123</p>
+                        
                         
                         <div class="box">
                             <span><a href="#">Family Site</a></span>
@@ -279,5 +271,13 @@
             </div>
         </div>
     </footer>
+
+    <ul id="navi">
+        <li><a href="#header" class="on"></a></li>
+        <li><a href="#box1"></a></li>
+        <li><a href="#brand"></a></li>
+        <li><a href="#read"></a></li>
+        <li><a href="#comment"></a></li>
+    </ul>
 </body>
 </html>
