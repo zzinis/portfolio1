@@ -1586,9 +1586,6 @@ fieldset {
             font: bold 28px/1 'Overpass';
             color: #434343;
             margin-bottom: 60px; }
-          #footer .inner .wrap .top .last p {
-            font: 14px/1.6 'Overpass', 'Noto Sans KR';
-            color: #434343e6; }
           #footer .inner .wrap .top .last .box {
             min-height: 100px;
             margin-top: 30px; }
