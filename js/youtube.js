@@ -9,6 +9,7 @@ $.ajax({
     }
 })
 .success(function(data){
+    // console.log(data);
     
     let items = data.items;
     console.log(items);
@@ -17,14 +18,16 @@ $.ajax({
 
         let txt = data.snippet.description;
         let len = txt.length;
-        if(len>150){
-            txt = txt.substr(0,150) + "..."
+        if(len>50){
+            txt = txt.substr(0,50) + "..."
         }else{
             txt
         }
 
         let date = data.snippet.publishedAt;
         date = date.substr(0,10)
+        // date = date.split("T");
+
         $("#vidGallery")
             .append(
                 $("<article>")
