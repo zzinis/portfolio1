@@ -1,18 +1,20 @@
 $.ajax({
-    url : "https://www.googleapis.com/youtube/v3/playlistItems",
+    url:"https://www.googleapis.com/youtube/v3/playlistItems",
     dataType : 'jsonp',
-    data : {
+    data :{
         part : "snippet",
-        key : "AIzaSyDADYcd0NuFdvXHQT6pTPiGJLbUS7vppKM",
+        key: "AIzaSyDADYcd0NuFdvXHQT6pTPiGJLbUS7vppKM",
         maxResults :5,
         playlistId : "PL7bRBTzgXVld3fPyDIJwzH3Dltj3e8bVU"
     }
 })
 .success(function(data){
+    
     let items = data.items;
     console.log(items);
 
-    $(items).each(function(idnex, data){
+    $(items).each(function(index, data){
+
         let txt = data.snippet.description;
         let len = txt.length;
         if(len>150){
@@ -23,14 +25,13 @@ $.ajax({
 
         let date = data.snippet.publishedAt;
         date = date.substr(0,10)
-
         $("#vidGallery")
             .append(
                 $("<article>")
                     .append(
-                        $("<a>").attr({ href: data.snippet.resourceId.videoID})
+                        $("<a>").attr({ href : data.snippet.resourceId.videoId})
                                 .append(
-                                    $("<img>").attr({ src: data.snippet.thumbnails.high.url})
+                                    $("<img>").attr({ src : data.snippet.thumbnails.high.url})
                                 ),
                         $("<div class = 'con'>")
                                     .append(
@@ -39,19 +40,21 @@ $.ajax({
                                         $("<span>").text(date)
                                     )
                     )
+                    
             )
+
     });
 
 })
 .error(function(err){
-    console.log("데이터를 불러올 수 없습니다.")
+    console.log("데이터를 불러올 수 없습니다");
 })
+
 
 $("body").on("click", "#vidGallery article a", function(e){
     e.preventDefault();
 
     let vidId = $(this).attr("href");
-
     $("body")
         .append(
             $("<div class = 'pop'>")
@@ -63,11 +66,14 @@ $("body").on("click", "#vidGallery article a", function(e){
                             width:"100%",
                             height:600
                         }),
-                        $("<span>").text("close")
+                    $("<span>").text("close")    
                 )
         )
+
 });
+
 
 $("body").on("click", ".pop span", function(){
     $(".pop").remove();
 });
+

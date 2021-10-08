@@ -1,0 +1,31 @@
+.youtube{
+    width: 100%;
+    
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        #vidGallery{
+            width: 100%; padding: 100px;
+        
+            article{
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 30px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+        
+                a{
+                    width: 30%;
+                    img{ width: 100%;}
+                }
+                .con{
+                    width: 65%;
+                }
+        
+            }
+        }
+    }
+}
