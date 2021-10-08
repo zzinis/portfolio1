@@ -3,7 +3,7 @@ $.ajax({
     dataType:"json", 
     data:{
         api_key:"fce3d5dec157a9b2bb0797070e4fd0b8", 
-        per_page:20, 
+        per_page:10, 
         format:"json",
         nojsoncallback:1, 
         privacy_filter : 5, 
@@ -47,7 +47,7 @@ $.ajax({
                                 $("<img>").attr({
                                     src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
                                 }),
-                                $("<span>").text(data.owner)
+                                $("<span>").text(data.owner) 
                             )
                     )
             )
@@ -63,15 +63,17 @@ $("body").on("click", "#gallery ul li", function(e){
 
     let imgSrc = $(this).children("a").attr("href"); 
 
-    $("body").append(
-        $("<div class='pop'>")
-            .append(
-                $("<img>").attr({ src : imgSrc}),
-                $("<span>").text("close")
-            )
-    )
+    $("body")
+        .append(
+            $("<div class = 'pop'>")
+                .append(
+                    // $("<img>").attr({ src : imgSrc}),
+                    $("<span>").text("close")
+                )
+        )
 });
 
 $("body").on("click", ".pop span", function(){
     $(".pop").remove(); 
 });
+
