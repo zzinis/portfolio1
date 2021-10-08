@@ -1014,15 +1014,16 @@ fieldset {
           width: 33.333%; }
           .gallery .inner #gallery ul li img {
             width: 100%; }
-    .gallery .inner .pop span {
-      color: #fff; }
 
 .youtube {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .youtube .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .youtube .inner #vidGallery {
+      position: relative;
       width: 100%;
       padding: 100px 0 150px 0;
       display: flex;
@@ -1040,13 +1041,15 @@ fieldset {
           height: 300px; }
           .youtube .inner #vidGallery article a img {
             width: 100%;
+            height: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center/cover; }
         .youtube .inner #vidGallery article .con {
-          padding: 20px 25px; }
+          padding: 20px 25px;
+          width: 55%; }
           .youtube .inner #vidGallery article .con h2 {
-            font: bold 18px/1.2 'arial';
+            font: bold 18px/1.2 'Open Sans';
             margin-bottom: 15px; }
             .youtube .inner #vidGallery article .con h2::after {
               content: '';
@@ -1056,10 +1059,46 @@ fieldset {
               background: #bbb;
               margin-top: 20px; }
           .youtube .inner #vidGallery article .con p {
-            font: 14px/1.4 'arial';
+            font: 14px/1.4 'Open Sans';
             margin-bottom: 20px; }
           .youtube .inner #vidGallery article .con span {
-            font: 15px/1 'arial'; }
+            font: 15px/1 'Open Sans'; }
+
+.pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: block;
+  box-sizing: border-box;
+  padding: 80px; }
+  .pop .iframe {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .pop span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer; }
+  .pop .con {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: none; }
+    .pop .con h2 {
+      font: bold 40px/1 'Open Sans';
+      color: #ddd;
+      margin-top: 40px; }
+    .pop .con p {
+      font: 20px/1.3 'Open Sans';
+      color: #aaa;
+      margin-top: 20px; }
 
 #header {
   width: 100%; }

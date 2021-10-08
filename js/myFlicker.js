@@ -1,82 +1,78 @@
 $.ajax({
-    url:"https://www.googleapis.com/youtube/v3/playlistItems",
-    dataType : 'jsonp',
-    data :{
-        part : "snippet",
-        key: "AIzaSyDADYcd0NuFdvXHQT6pTPiGJLbUS7vppKM",
-        maxResults :5,
-        playlistId : "PL7bRBTzgXVld3fPyDIJwzH3Dltj3e8bVU"
+    url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
+    dataType:"json", 
+    data:{
+        api_key:"fce3d5dec157a9b2bb0797070e4fd0b8", 
+        per_page:20, 
+        format:"json",
+        nojsoncallback:1, 
+        privacy_filter : 5, 
+        tags :"landscape" 
     }
 })
 .success(function(data){
-    // console.log(data);
-    
-    let items = data.items;
-    console.log(items);
+    console.log(data.photos.photo); 
+    let items = data.photos.photo; 
+
+    $("#gallery").append("<ul>");
 
     $(items).each(function(index, data){
 
-        let txt = data.snippet.description;
-        let len = txt.length;
-        if(len>150){
-            txt = txt.substr(0,150) + "..."
-        }else{
-            txt
+        let text = data.title; 
+        if(!data.title){
+            text = "No description in this photo"; 
         }
 
-        let date = data.snippet.publishedAt;
-        date = date.substr(0,10)
-        // date = date.split("T");
-
-        $("#vidGallery")
+        $("#gallery ul")
             .append(
-                $("<article>")
+                $("<li>")
                     .append(
-                        $("<a>").attr({ href : data.snippet.resourceId.videoId})
-                                .append(
-                                    $("<img>").attr({ src : data.snippet.thumbnails.high.url})
-                                ),
-                        $("<div class = 'con'>")
-                                    .append(
-                                        $("<h2>").text(data.snippet.title),
-                                        $("<p>").text(txt),
-                                        $("<span>").text(date)
-                                    )
+                        $("<a>").attr({
+                            href : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"
+                        })
+                        .append(
+
+                            $("<img>").attr({
+                                src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
+                            })
+                        )
                     )
-                    
+                    .append(
+                        $("<p>").text(text)
+                    )
+
+                    .append(
+                        $("<div class='profile'>")
+                            .append(
+                                $("<img>").attr({
+                                    src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
+                                }),
+                                $("<span>").text(data.owner)
+                            )
+                    )
             )
-
-    });
-
+    })
 })
 .error(function(err){
-    console.log("데이터를 불러올 수 없습니다");
+    console.err("데이터를 호출하는데 실패했습니다"); 
 })
 
-
-$("body").on("click", "#vidGallery article a", function(e){
+$("body").on("click", "#gallery ul li", function(e){
     e.preventDefault();
 
-    let vidId = $(this).attr("href");
-    $("body")
-        .append(
-            $("<div class = 'pop'>")
-                .append(
-                    $("<iframe>")
-                        .attr({
-                            src : "https://www.youtube.com/embed/"+vidId,
-                            frameborder : 0,
-                            width:"100%",
-                            height:600
-                        }),
-                    $("<span>").text("close")    
-                )
-        )
+    let imgSrc = $(this).children("a").attr("href");
 
+    $("body").append(
+        $("<div class = 'pop'>")
+            .append(
+                $("<img>").attr({src: imgSrc}),
+                $("<span>").text("close")
+            )
+    );
 });
-
 
 $("body").on("click", ".pop span", function(){
-    $(".pop").remove();
+    $(".pop").fadeOut(1000,function(){
+        $(this).remove();
+    });
 });
-
