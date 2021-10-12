@@ -1050,6 +1050,10 @@ fieldset {
           .gallery .inner #gallery ul li .profile {
             display: none; }
 
+.location .inner #map {
+  width: 800px;
+  height: 400px; }
+
 .youtube {
   width: 100%;
   position: relative; }

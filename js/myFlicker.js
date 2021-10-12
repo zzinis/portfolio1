@@ -7,7 +7,7 @@ $.ajax({
         format:"json",
         nojsoncallback:1, 
         privacy_filter : 5, 
-        tags :"cloud" 
+        tags :"cloudy" 
     }
 })
 .success(function(data){
