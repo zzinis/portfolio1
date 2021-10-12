@@ -1,10 +1,69 @@
 .location{
 
     .inner{
+        width: 1180px;
+        margin: 0 auto;
 
         #map{
-            width: 800px;
-            height: 400px;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 30px;
+        }
+
+        .contact{
+            width: 100%;
+
+            .wrap{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .left{
+                    width: 50%;
+                    padding: 50px 60px;
+                    #name, #email, #subject, #message{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid #bbb;
+                        margin-bottom: 20px;
+                        padding: 10px 0;
+                    }
+
+                    
+                }
+
+                .right{
+                    width: 50%;
+                    padding: 30px 60px;
+
+                    h2{
+                        font: bold 15px/1 'Open Sans';
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        font: 14px/1.7 'Open Sans';
+                        margin-bottom: 30px;
+                        
+                    }
+
+                }
+
+                .bottom{
+                    display: block;
+                    margin: 0 auto;
+
+                    a{
+                        font: bold 13px/35px 'Open Sans';
+                        display: block;
+                        width: 100px;
+                        height: 35px;
+                        background: #111;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+                
+            }
         }
     }
 }
