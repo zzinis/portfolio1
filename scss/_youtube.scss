@@ -15,50 +15,58 @@
  
         
             article{
-                width: 49%;
-                border-top: 1px solid #111;
-                padding: 30px 0;
+                width: 32%;
+                margin-right: 15px;
+                padding: 20px;
                 margin-bottom: 30px;
-                margin-right: 1%;
-                display: flex;
-                justify-content: space-between;
-                
+                border: 1px solid #bbb;
 
-        
                 a{
+                    display: block;
                     width: 100%;
-                    height: 300px;
+                    overflow: hidden;
+                    transform: scale(1);
+                    object-fit: cover;
+                    margin-bottom: 20px;
 
                     img{ 
-                        width: 100%; 
-                        height: 100%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center/cover;
+                        width: 100%;
+                        object-fit: cover;
+                        filter: grayscale(40%);
                     }
                 }
                 .con{
-                    padding: 20px 25px;
-                    width: 55%;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
                     h2{
                         font: bold 18px/1.2 'Open Sans';
                         margin-bottom: 15px;
-                        &::after{
-                            content: '';
-                            display: block;
-                            width: 100%;
-                            height: 1px;
-                            background: #bbb;
-                            margin-top: 20px;
-                        }
+                        border-bottom: 1px solid #bbb;
+                        padding-bottom: 20px;
+                        
                         
                     }
                     p{
+                        float: left;
                         font: 14px/1.4 'Open Sans';
                         margin-bottom: 20px;
                     }
                     span{
+                        float: right;
                         font: 15px/1 'Open Sans';
+                    }
+                }
+
+                &:hover{
+                    a{
+                        img{
+                            transition: 0.5s;
+                            filter: grayscale(0);
+                        }
                     }
                 }
         

@@ -4,7 +4,7 @@ $.ajax({
     data :{
         part : "snippet",
         key: "AIzaSyDADYcd0NuFdvXHQT6pTPiGJLbUS7vppKM",
-        maxResults :15,
+        maxResults :6,
         playlistId : "PL7bRBTzgXVld3fPyDIJwzH3Dltj3e8bVU"
     }
 })
@@ -18,8 +18,8 @@ $.ajax({
 
         let txt = data.snippet.description;
         let len = txt.length;
-        if(len>50){
-            txt = txt.substr(0,50) + "..."
+        if(len>29){
+            txt = txt.substr(0,29) + "..."
         }else{
             txt
         }
@@ -27,6 +27,10 @@ $.ajax({
         let date = data.snippet.publishedAt;
         date = date.substr(0,10)
         // date = date.split("T");
+
+        let title = data.snippet.title;
+        title = title.substr(0,23)
+
 
         $("#vidGallery")
             .append(
@@ -38,7 +42,7 @@ $.ajax({
                                 ),
                         $("<div class = 'con'>")
                                     .append(
-                                        $("<h2>").text(data.snippet.title),
+                                        $("<h2>").text(title),
                                         $("<p>").text(txt),
                                         $("<span>").text(date)
                                     )
