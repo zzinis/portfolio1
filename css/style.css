@@ -1003,51 +1003,27 @@ fieldset {
       position: relative; }
       .gallery .inner #gallery ul {
         width: 100%;
-        position: relative; }
-        .gallery .inner #gallery ul::after {
-          content: '';
-          display: block;
-          clear: both; }
+        display: flex;
+        flex-wrap: wrap; }
         .gallery .inner #gallery ul li {
-          float: left;
-          padding: 10px;
-          width: 33.333%;
-          height: 300px;
-          position: relative; }
-          .gallery .inner #gallery ul li:nth-of-type(1) {
-            width: 66.6%; }
-            .gallery .inner #gallery ul li:nth-of-type(1) img {
-              width: 100%;
-              height: 100%; }
-          .gallery .inner #gallery ul li:nth-of-type(2) {
-            width: 33.3%; }
-          .gallery .inner #gallery ul li:nth-of-type(3) {
-            width: 33.3%; }
-            .gallery .inner #gallery ul li:nth-of-type(3) img {
-              width: 100%;
-              height: 100%; }
-          .gallery .inner #gallery ul li:nth-of-type(4) {
-            height: 600px; }
-          .gallery .inner #gallery ul li:nth-of-type(6) {
-            height: 600px; }
-          .gallery .inner #gallery ul li:nth-of-type(7) {
-            position: absolute;
-            top: 50%;
-            left: 0; }
-          .gallery .inner #gallery ul li:nth-of-type(8) {
-            width: 66.6%;
-            position: absolute;
-            bottom: 0;
-            left: 0; }
-          .gallery .inner #gallery ul li img {
+          width: 380px;
+          background: #d1ccbf;
+          margin-right: 20px;
+          margin-bottom: 20px; }
+          .gallery .inner #gallery ul li:nth-of-type(3n) {
+            margin-right: 0px; }
+          .gallery .inner #gallery ul li a {
+            display: block;
             width: 100%;
-            height: 100%;
-            filter: saturate(50%); }
-            .gallery .inner #gallery ul li img:hover {
-              filter: saturate(100%); }
-          .gallery .inner #gallery ul li p {
-            display: none; }
-          .gallery .inner #gallery ul li .profile {
+            height: 500px;
+            padding: 50px 70px; }
+            .gallery .inner #gallery ul li a img {
+              width: 100%;
+              height: 100%;
+              transform: scale(0.8);
+              border-top-left-radius: 50% 30%;
+              border-top-right-radius: 50% 30%; }
+          .gallery .inner #gallery ul li .profile img {
             display: none; }
 
 .location .inner {
