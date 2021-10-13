@@ -7,7 +7,8 @@ $.ajax({
         format:"json",
         nojsoncallback:1, 
         privacy_filter : 5, 
-        tags :"cloudy" 
+        tag_mode: "any",
+        user_id: "193313784@N07"
     }
 })
 .success(function(data){
