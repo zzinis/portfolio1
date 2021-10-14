@@ -1803,11 +1803,16 @@ fieldset {
   z-index: 12; }
   #popup .content {
     width: 100%;
-    height: 100px; }
+    height: 150px;
+    padding: 20px 0; }
+    #popup .content img {
+      width: 50px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px; }
     #popup .content h1 {
       font: bold 18px/1 'Open Sasn';
-      text-align: center;
-      margin-top: 40px; }
+      text-align: center; }
   #popup .wrap {
     float: left; }
     #popup .wrap label {

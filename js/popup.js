@@ -1,13 +1,13 @@
 var isCookie = document.cookie.indexOf("popup=done");
 console.log(isCookie);
 
-if(isCookie == -1){
-    $("#popup").show();
-    console.log("쿠키없음");
-}else{
-    $("#popup").hide();
-    console.log("쿠키있음");
-}
+// if(isCookie == -1){
+//     $("#popup").show();
+//     console.log("쿠키없음");
+// }else{
+//     $("#popup").hide();
+//     console.log("쿠키있음");
+// }
 
 $("#popup .close").on("click", function(e){
     e.preventDefault();
