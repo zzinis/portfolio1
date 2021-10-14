@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1122,11 +1123,10 @@ fieldset {
       display: flex;
       flex-wrap: wrap; }
       .youtube .inner #vidGallery article {
-        width: 32%;
-        margin-right: 15px;
-        padding: 20px;
+        width: 50%;
         margin-bottom: 30px;
-        border: 1px solid #bbb; }
+        padding: 0px 15px;
+        position: relative; }
         .youtube .inner #vidGallery article a {
           display: block;
           width: 100%;
@@ -1138,22 +1138,29 @@ fieldset {
             width: 100%;
             object-fit: cover;
             filter: grayscale(40%); }
-        .youtube .inner #vidGallery article .con::after {
-          content: '';
-          display: block;
-          clear: both; }
-        .youtube .inner #vidGallery article .con h2 {
-          font: bold 18px/1.2 'Open Sans';
-          margin-bottom: 15px;
-          border-bottom: 1px solid #bbb;
-          padding-bottom: 20px; }
-        .youtube .inner #vidGallery article .con p {
-          float: left;
-          font: 14px/1.4 'Open Sans';
-          margin-bottom: 20px; }
-        .youtube .inner #vidGallery article .con span {
-          float: right;
-          font: 15px/1 'Open Sans'; }
+        .youtube .inner #vidGallery article .con {
+          width: 450px;
+          height: 120px;
+          position: absolute;
+          bottom: 2%;
+          background: #fff;
+          margin-bottom: 10px; }
+          .youtube .inner #vidGallery article .con::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .youtube .inner #vidGallery article .con h2 {
+            font: 400 27px/1 'EB Garamond';
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+            color: #525252;
+            display: block;
+            margin: 36px 0; }
+          .youtube .inner #vidGallery article .con p {
+            display: none; }
+          .youtube .inner #vidGallery article .con span {
+            font: 15px/1 'EB Garamond';
+            letter-spacing: 1px; }
         .youtube .inner #vidGallery article:hover a img {
           transition: 0.5s;
           filter: grayscale(0); }
