@@ -405,14 +405,14 @@ fieldset {
     .department .inner .bottom .wrap {
       display: flex;
       flex-wrap: wrap;
-      border-top: 8px solid #222;
-      border-bottom: 5px solid #222;
+      border-top: 4px solid #222;
+      border-bottom: 4px solid #222;
       padding: 40px 0; }
       .department .inner .bottom .wrap article {
         width: 280px;
         height: 450px;
         margin-right: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         transition: 0.5s; }
         .department .inner .bottom .wrap article:hover .pic {
           filter: saturate(100%); }
@@ -541,7 +541,8 @@ fieldset {
     display: inline-block;
     font: 20px/30px 'arial';
     color: #666;
-    text-align: center; }
+    text-align: center;
+    vertical-align: middle; }
   .community .inner .pagination .numbers {
     display: inline-block;
     text-align: center;
@@ -1091,6 +1092,29 @@ fieldset {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
+    .youtube .inner .top {
+      width: 100%; }
+      .youtube .inner .top .first {
+        margin-bottom: 10px;
+        border-bottom: 3px solid #111; }
+        .youtube .inner .top .first p {
+          display: inline-block;
+          font: bold 14px/1 'Open Sans';
+          width: 25%;
+          margin-bottom: 15px; }
+        .youtube .inner .top .first span {
+          font: bold 14px/1 'Open Sans'; }
+      .youtube .inner .top .second {
+        float: left; }
+        .youtube .inner .top .second p {
+          display: inline-block;
+          width: 25%;
+          font: bold 30px/0.9 'Overpass'; }
+        .youtube .inner .top .second span {
+          font: 15px/1.4 'Open Sans';
+          display: inline-block;
+          width: 45%;
+          color: #1f1f1f; }
     .youtube .inner #vidGallery {
       position: relative;
       width: 100%;

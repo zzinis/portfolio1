@@ -7,6 +7,44 @@
         margin: 0 auto;
         position: relative;
 
+        .top{
+            width: 100%;
+
+            .first{
+                margin-bottom: 10px;
+                border-bottom: 3px solid #111;
+                
+
+                p{
+                    display: inline-block;
+                    font: bold 14px/1 'Open Sans';
+                    width: 25%;
+                    margin-bottom: 15px;
+                }
+                span{
+                    font: bold 14px/1 'Open Sans';
+                }
+            }
+            .second{
+                float: left;
+                p{
+                    display: inline-block;
+                    width: 25%;
+                    font: bold 30px/0.9 'Overpass';
+
+                }
+                span{
+                    font: 15px/1.4 'Open Sans';
+                    display: inline-block;
+                    width: 45%;
+                    color: #1f1f1f;
+                    
+
+                    
+                }
+            }
+        }
+
         #vidGallery{
             position: relative;
             width: 100%; padding: 100px 0 150px 0;
