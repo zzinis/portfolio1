@@ -963,6 +963,42 @@ background-color: #f5f2ee;
     }
 }
 
+#popup{
+    width: 400px; background: #d1ccbf;
+    padding: 40px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 12;
+
+    .content{
+        width: 100%; height: 100px;
+        h1{
+            font: bold 18px/1 'Open Sasn';
+            text-align: center;
+            margin-top: 40px
+        }
+        
+    }
+    .wrap{
+        float: left;
+        label{
+            font: bold 13px/1 'Open Sans';
+            color: #111; margin-left: 4px;
+        }
+    }
+    .close{
+        float: right;
+        font: 14px/1 'Open Sans';
+        color: #434343;
+        transition: 0.5s;
+
+        &:hover{
+            border-bottom: 1px solid #111;
+        }
+        
+    }
+}
+
 /*tablet*/ 
 @media screen and (max-width:1179px){
     #header{   
