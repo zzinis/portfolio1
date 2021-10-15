@@ -83,6 +83,66 @@
             }
             
         }
+
+        .contanier{
+            width: 100%;
+            position: relative;
+            padding: 0 50px;
+            margin-bottom: 100px;
+            
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px -15px;
+
+                .box{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    position: relative;
+                    min-height: 50px;
+                    padding-left: 74px;
+                    width: 33.333%;
+                    margin-bottom: 30px;
+
+                    .icon{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #131517;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: block;
+                        color: #e6e6e6;
+                        text-align: center;
+                        
+                        
+                        i{
+                            font-size: 17px;
+                            line-height: 50px;
+                        }
+
+                    }
+
+                    .txt{
+                        p{
+                            font: bold 18px/1 'Hebo';
+                            color: #131517;
+                            letter-spacing: 1px;
+                            margin-bottom: 15px;
+                        }
+                        span{
+                            font: 14px/1.6 'Hebo';
+                            display: block;
+                            color: #7c7c7c;
+                            margin-right: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
         .bottom{
             width: 100%;
             h1{
