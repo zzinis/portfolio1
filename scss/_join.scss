@@ -9,8 +9,7 @@
         h1{
             text-align: center;
         }
-        
-        
+                
         p{
             font: 15px/1 'Noto Sans KR';
             color: #888;
@@ -62,7 +61,6 @@
         }
 
 
-
         .hidden{
             position:absolute; 
             top:-9999px; 
@@ -89,99 +87,6 @@
             padding: 10px 40px;
             font: 14px/1.7 'arial';
             resize: none;
-
-    .sub_visual{
-        background:url(../img/c4.jpg) no-repeat center/cover; 
-        }
-
-    >.inner{
-        h1{
-            text-align: center;
-            // font: bold 30px/1 'arial'; 
-            // color:#000; 
-            // margin-bottom:10px; 
-        }
-        
-        
-        p{
-            font: 15px/1 'arial';
-            color: #888;
-            text-align: center;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .joinbox{
-            padding: 18px 0;
-            margin-bottom: 60px;
-            border-bottom: 1px solid #e3e3e3;
-            border-top: 1px solid #e3e3e3;
-            .inner{
-                ul{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    
-                    li{
-                        margin-right: 50px;
-                        font: bold 15px/30px 'Overpass', sans-serif;
-                        color: #888;
-
-
-                        &:nth-of-type(2) span{
-                            background-color: #005151;
-                        }
-
-                        span{
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            background-color: #a2acab;
-                            color: #fff;
-                            font: 14px/30px 'arial';
-                            letter-spacing: -1px;
-                            display: inline-block;
-                            text-align: center;
-                            margin-right: 15px;
-                            
-                        }
-
-                        
-                    }
-                }
-            }
-
-        }
-
-
-
-        .hidden{
-            position:absolute; 
-            top:-9999px; 
-            opacity:0; 
-            
-        }
-        h2{
-            font:bold 14px/1 'arial'; 
-            color:#777; 
-            margin-bottom:20px; 
-            span{
-                color: red;
-                margin-right: 5px;
-            }
-        }
-
-        #terms{
-            width:100%; 
-            height:200px; 
-            padding:20px; 
-            background-color:#eee; 
-            color:#888; 
-            margin-bottom:10px; 
-            padding: 10px 40px;
-            font: 14px/1.7 'arial';
-            resize: none;
-            box-sizing: border-box;
         }
         .agreement{
             margin-bottom:70px; 
@@ -201,7 +106,6 @@
                 
             }
         }
-
         table{
             width:100%; 
             border-top:2px solid #333; 
@@ -236,6 +140,12 @@
             td{
                 border-bottom:1px solid #d4d1d1; 
                 padding:15px 30px; 
+
+                >span{
+                    font:12px/1 "맑은 고딕"; 
+                    color: orangered; 
+                    margin-bottom:10px; 
+                }
             }
 
             .btn{
@@ -296,7 +206,6 @@
             }
 
             .address{
-                
                 :nth-of-type(2),:nth-of-type(3){
                     display: block;
                     margin: 10px 0;
@@ -314,154 +223,9 @@
                     font-size: 13px;
                     vertical-align: top;
                 }
-
-            }
-
-            
-            
-            
-        }
-    }
-            
-        }
-        .agreement{
-            margin-bottom:70px; 
-            text-align: right;
-            label{
-                color: #666;
-                margin: 0px 15px 0px 5px;
-                
-            }
-
-
-            label[for="agree"]{
-                font-size:13px; 
-            }
-            label[for="noagree"]{
-                font-size:13px; 
-                
             }
         }
-
-        table{
-            width:100%; 
-            border-top:2px solid #333; 
-            border-bottom:2px solid #bbb; 
-            border-collapse:collapse; 
-
-            th{
-                width:17%; 
-                text-align:left; 
-                font:bold 14px/1 'arial'; 
-                color:#666; 
-                background-color:#fafafa; 
-                border-right:1px solid #e6e1e1; 
-                border-bottom:1px solid #d4d1d1; 
-                padding:24px 0px 24px 30px; 
-                
-
-                &:last-child{ 
-                    border-right:none; 
-                    border-bottom:none; 
-                    text-align:center; 
-                    background:#fff; 
-                    font-size:0;
-                }
-
-                span{
-                    color: red;
-                    margin-left: 5px;
-
-                }
-            }
-            td{
-                border-bottom:1px solid #d4d1d1; 
-                padding:15px 30px; 
-            }
-
-            .btn{
-                
-                display: inline-block;
-                width: 130px;
-                height: 35px;
-                font: 14px/35px 'arial';
-                color: #fff;
-                background-color: #b2a8a2;
-                text-align: center;
-                border-radius: 5px;
-                
-            }
-
-            input[type=submit]{
-                width:120px; 
-                height:40px; 
-                border:none; 
-                background-color:#005151; 
-                font:bold 14px/40px 'arial'; 
-                color:#fff; 
-                margin:0 10px; 
-            }
-
-            input[type=reset]{
-                width:120px; 
-                height:40px; 
-                border:none; 
-                background-color:#4b5252; 
-                font:bold 14px/40px 'arial'; 
-                color:#fff; 
-                margin:0 10px; 
-            }
-
-            input[type=text], input[type=password]{
-                width:18%; 
-                height:40px; 
-                border:1px solid #bbb; 
-                background-color:#fff; 
-                padding-left:20px; 
-                border-radius: 4px;
-            }
-            input[type=radio]{
-                margin-right:10px; 
-                
-            }
-            label{
-                margin-right:30px; 
-            }
-            select{
-                width:18%; 
-                height:40px; 
-                border:1px solid #bbb; 
-                background-color:#fff; 
-                padding-left:20px; 
-                border-radius: 4px;
-            }
-
-            .address{
-                
-                :nth-of-type(2),:nth-of-type(3){
-                    display: block;
-                    margin: 10px 0;
-                    width: 550px;
-                }
-            }
-            .sns{
-                >p{
-                    text-align: left;
-                    margin-top: 5px;
-                    margin-bottom: 15px;
-                }
-                label{
-                    color: #666;
-                    font-size: 13px;
-                    vertical-align: top;
-                }
-
-            }
-
-            
-            
-            
-        }
+        
     }
 }
 

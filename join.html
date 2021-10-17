@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
+	<script defer src="js/join.js"></script>
     <script src="https://kit.fontawesome.com/a5faf288a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -78,7 +79,7 @@
 				</div>
 			</div>
 
-			<form action="/" method="post">
+			<form action="result.html" method="get">
 				<fieldset>
 					<legend class="hidden">회원가입양식폼</legend>
 
@@ -101,31 +102,31 @@
 
 						<tr>
 							<th scope="row"><label for="username">이름<span>*</span></label></th>
-							<td>
+							<td class="username">
 								<input type="text" name="username" id="username" placeholder="이름" required>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="userid">아이디<span>*</span></label></th>
-							<td>
+							<td class="uesrid">
 								<input type="text" name="userid" id="userid" placeholder="아이디" required>
 							</td>
 						</tr>
 						<tr>
-							<th scope="row"><label for="pwd">비밀번호<span>*</span></label></th>
-							<td>
-								<input type="password" name="pwd" id="pwd"  required>
+							<th scope="row"><label for="pwd1">비밀번호<span>*</span></label></th>
+							<td class="pwd">
+								<input type="password" name="pwd1" id="pwd1"  required>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="pwd2"> 비밀번호 확인<span>*</span></label></th>
-							<td>
+							<td class="pwd">
 								<input type="password" name="pwd2" id="pwd2"  required>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="email">E-MAIL 주소</label> </th>
-							<td>
+							<td class="email">
 								<input type="text" name="email" id="email" >
 								@
 								<select name="company" id="company">
@@ -139,7 +140,7 @@
 
 						<tr>
 							<th scope="row"><label for="phone">휴대전화</label></th>
-							<td>
+							<td class="phone">
 								<select name="phoneF" id="phoneF">
 									<option value="010">010</option>
 									<option value="010">011</option>
