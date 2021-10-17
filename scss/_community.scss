@@ -36,8 +36,8 @@
         }
         .btn{
           display: inline-block;
-          background: #454545;
-          color: #fff;
+          color: #454545;
+          border-bottom: 1px solid #454545;
           text-align: center;
           padding: 10px 20px;
           font: bold 13px/1 'Open Sans';
@@ -141,6 +141,7 @@
       color: #666;
       text-align: center;
       vertical-align: middle;
+      margin: 0px 5px;
     }
 
     .numbers {
