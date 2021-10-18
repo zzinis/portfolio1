@@ -980,69 +980,122 @@ fieldset {
           background: #111;
           color: #fff;
           text-align: center; }
-  .location .inner #map {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 70px; }
-  .location .inner .faq .wrap {
-    display: flex; }
-    .location .inner .faq .wrap .left {
-      width: 49%; }
-      .location .inner .faq .wrap .left p {
-        font: bold 13px/1 'Open Sans';
-        margin-bottom: 10px; }
-      .location .inner .faq .wrap .left h2 {
-        font: bold 35px/1.3 'EB Garamond'; }
-    .location .inner .faq .wrap .right {
-      width: 49%; }
-      .location .inner .faq .wrap .right p {
-        font: bold 14px/1 'Open Sans';
-        margin-bottom: 15px; }
-      .location .inner .faq .wrap .right span {
+  .location .inner .branch {
+    float: left;
+    margin-bottom: 10px; }
+    .location .inner .branch::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .location .inner .branch li {
+      float: left;
+      margin-right: 10px; }
+      .location .inner .branch li a {
         display: block;
-        font: 14px/1.6 'Open Sans';
-        margin-right: 70px;
-        margin-bottom: 30px; }
-      .location .inner .faq .wrap .right .box {
-        display: flex; }
-        .location .inner .faq .wrap .right .box #wrap dt {
-          width: 100%;
-          position: relative;
-          font: bold 16px/1 'Open Sans';
-          color: #131517;
-          cursor: pointer;
-          transition: 0.5s;
+        width: 200px;
+        height: 40px;
+        background: #111;
+        color: #fff;
+        font: bold 13px/40px '맑은 고딕';
+        text-align: center; }
+  .location .inner .map {
+    border: 1px solid #111;
+    width: 100%;
+    display: flex; }
+    .location .inner .map .store {
+      width: 200px;
+      border-right: 1px solid #111;
+      padding: 30px 20px 30px 30px; }
+      .location .inner .map .store p a {
+        font: 14px/1.4 '맑은고딕';
+        margin-bottom: 25px;
+        letter-spacing: -0.4px;
+        color: #bdbcbc;
+        display: block; }
+      .location .inner .map .store p.on a {
+        color: #3c828c; }
+    .location .inner .map #map {
+      width: 980px;
+      height: 500px; }
+  .location .inner .traffic {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 40px; }
+    .location .inner .traffic li {
+      display: inline-block; }
+      .location .inner .traffic li a {
+        width: 100px;
+        height: 30px;
+        font: 13px/30px '맑은 고딕';
+        background: #3c828c;
+        color: #fff;
+        display: block;
+        text-align: center; }
+      .location .inner .traffic li.on a {
+        background: #aaa;
+        color: #333; }
+  .location .inner .faq {
+    width: 100%;
+    position: relative; }
+    .location .inner .faq .wrap {
+      display: flex; }
+      .location .inner .faq .wrap .left {
+        width: 49%; }
+        .location .inner .faq .wrap .left p {
+          font: bold 13px/1 'Open Sans';
           margin-bottom: 10px; }
-          .location .inner .faq .wrap .right .box #wrap dt::before {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 11px;
-            background: #000;
-            position: absolute;
-            top: 50%;
-            right: 33px;
-            transform: translateY(-50%); }
-          .location .inner .faq .wrap .right .box #wrap dt::after {
-            content: '';
-            display: block;
-            width: 11px;
-            height: 1px;
-            background: #000;
-            position: absolute;
-            top: 50%;
-            right: 28px;
-            transform: translateY(-50%); }
-          .location .inner .faq .wrap .right .box #wrap dt.on::before {
-            transform: translateY(-50%) rotate(-90deg); }
-        .location .inner .faq .wrap .right .box #wrap dd {
-          width: 100%;
-          padding: 5px 20px 10px;
-          font: 15px/1.3 'Open Sans';
-          color: #7c7c7c;
-          display: none; }
-          .location .inner .faq .wrap .right .box #wrap dd:nth-of-type(1) {
-            display: block; }
+        .location .inner .faq .wrap .left h2 {
+          font: bold 35px/1.3 'EB Garamond'; }
+      .location .inner .faq .wrap .right {
+        width: 49%; }
+        .location .inner .faq .wrap .right p {
+          font: bold 14px/1 'Open Sans';
+          margin-bottom: 15px; }
+        .location .inner .faq .wrap .right span {
+          display: block;
+          font: 14px/1.6 'Open Sans';
+          margin-right: 70px;
+          margin-bottom: 30px; }
+        .location .inner .faq .wrap .right .box {
+          display: flex; }
+          .location .inner .faq .wrap .right .box #wrap dt {
+            width: 100%;
+            position: relative;
+            font: bold 16px/1 'Open Sans';
+            color: #131517;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-bottom: 10px; }
+            .location .inner .faq .wrap .right .box #wrap dt::before {
+              content: '';
+              display: block;
+              width: 1px;
+              height: 11px;
+              background: #000;
+              position: absolute;
+              top: 50%;
+              right: 33px;
+              transform: translateY(-50%); }
+            .location .inner .faq .wrap .right .box #wrap dt::after {
+              content: '';
+              display: block;
+              width: 11px;
+              height: 1px;
+              background: #000;
+              position: absolute;
+              top: 50%;
+              right: 28px;
+              transform: translateY(-50%); }
+            .location .inner .faq .wrap .right .box #wrap dt.on::before {
+              transform: translateY(-50%) rotate(-90deg); }
+          .location .inner .faq .wrap .right .box #wrap dd {
+            width: 100%;
+            padding: 5px 20px 10px;
+            font: 15px/1.3 'Open Sans';
+            color: #7c7c7c;
+            display: none; }
+            .location .inner .faq .wrap .right .box #wrap dd:nth-of-type(1) {
+              display: block; }
 
 .youtube {
   width: 100%;

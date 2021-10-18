@@ -59,14 +59,94 @@
                 
             }
         }
+        .branch{
+            float: left;
+            margin-bottom: 10px;
 
-        #map{
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            li{
+                float: left;
+                margin-right: 10px;
+
+                a{
+                    display: block;
+                    width: 200px;
+                    height: 40px;
+                    background: #111;
+                    color: #fff;
+                    font: bold 13px/40px '맑은 고딕';
+                    text-align: center;
+                }
+            }
+        }
+
+        .map{
+            border: 1px solid #111;
             width: 100%;
-            height: 500px;
-            margin-bottom: 70px;
+            display: flex;
+            
+
+            .store{
+                width: 200px;
+                border-right: 1px solid #111;
+                padding: 30px 20px 30px 30px;    
+                p{
+                    a{
+                        font: 14px/1.4 '맑은고딕';
+                        margin-bottom: 25px;
+                        letter-spacing: -0.4px;
+                        color: #bdbcbc;
+                        display: block;
+                    }
+
+                    &.on{
+                        a{
+                            color: #3c828c;
+                        }
+                        
+                    }
+                    
+                }
+            }
+
+            #map{
+                width: 980px;
+                height: 500px;
+            }
+        }
+        
+        .traffic{
+            text-align: right;
+            margin-top: 5px;
+            margin-bottom: 40px;
+            li{
+                display: inline-block;
+                a{
+                    width: 100px;
+                    height: 30px;
+                    font: 13px/30px '맑은 고딕';
+                    background: #3c828c;
+                    color: #fff;
+                    display: block;
+                    text-align: center;
+                }
+                &.on{
+                    a{
+                        background:#aaa; color:#333; 
+                    }
+                }
+                
+            }
         }
 
         .faq{
+            width: 100%;
+            position: relative;
             .wrap{
                 display: flex;
                 .left{
