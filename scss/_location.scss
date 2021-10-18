@@ -59,31 +59,7 @@
                 
             }
         }
-        .branch{
-            float: left;
-            margin-bottom: 10px;
 
-            &::after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-
-            li{
-                float: left;
-                margin-right: 10px;
-
-                a{
-                    display: block;
-                    width: 200px;
-                    height: 40px;
-                    background: #111;
-                    color: #fff;
-                    font: bold 13px/40px '맑은 고딕';
-                    text-align: center;
-                }
-            }
-        }
 
         .map{
             border: 1px solid #111;
@@ -117,6 +93,7 @@
             #map{
                 width: 980px;
                 height: 500px;
+                filter: grayscale(60%);
             }
         }
         

@@ -980,24 +980,6 @@ fieldset {
           background: #111;
           color: #fff;
           text-align: center; }
-  .location .inner .branch {
-    float: left;
-    margin-bottom: 10px; }
-    .location .inner .branch::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .location .inner .branch li {
-      float: left;
-      margin-right: 10px; }
-      .location .inner .branch li a {
-        display: block;
-        width: 200px;
-        height: 40px;
-        background: #111;
-        color: #fff;
-        font: bold 13px/40px '맑은 고딕';
-        text-align: center; }
   .location .inner .map {
     border: 1px solid #111;
     width: 100%;
@@ -1016,7 +998,8 @@ fieldset {
         color: #3c828c; }
     .location .inner .map #map {
       width: 980px;
-      height: 500px; }
+      height: 500px;
+      filter: grayscale(60%); }
   .location .inner .traffic {
     text-align: right;
     margin-top: 5px;
