@@ -1000,6 +1000,25 @@ fieldset {
               text-align: right;
               display: block; }
 
+@media screen and (max-width: 1179px) {
+  .gallery {
+    width: 100%;
+    position: relative;
+    padding: 0px 30px; }
+    .gallery .inner {
+      width: 100%; }
+      .gallery .inner #gallery ul {
+        gap: 1%; }
+        .gallery .inner #gallery ul li {
+          min-height: 200px;
+          flex-basis: 250px;
+          flex-grow: 1; }
+          .gallery .inner #gallery ul li:nth-of-type(3n) {
+            margin-right: 20px; }
+          .gallery .inner #gallery ul li p {
+            font: bold 17px/1 'Open Sans';
+            transform: none;
+            padding: 0px 10px; } }
 .location .inner {
   width: 1180px;
   margin: 0 auto; }
