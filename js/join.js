@@ -58,7 +58,7 @@ function isPwd(name1, name2, len){
     }else{ 
         $("input[name="+name1+"]").parent().find("span").remove(); 
         $("input[name="+name1+"]").parent().append(
-            "<span>비밀번호는 "+len+"글자 이상 영문, 특수문자, 숫자를 포함해서 동일하게 입력하세요.</span>"
+            "<span>영문과 숫자는 "+len+"글자 이상을 사용해야 하며 특수문자, 숫자를 포함해주세요.</span>"
         ); 
         return false; 
     }

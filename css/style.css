@@ -1195,8 +1195,14 @@ fieldset {
       color: #aaa;
       margin-top: 20px; }
 
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 #header {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 2; }
   #header .inner {
     width: 100%;
     height: 100px;
@@ -1216,13 +1222,38 @@ fieldset {
       right: 15%;
       transform: translateY(-50%);
       margin-right: 2%; }
-      #header .inner .menuWeb #gnb li {
+      #header .inner .menuWeb #gnb > li {
         display: inline-block;
-        margin-left: 28px;
-        display: inline-block; }
-        #header .inner .menuWeb #gnb li a {
+        margin-left: 28px; }
+        #header .inner .menuWeb #gnb > li a {
           font: 14px/1 'Roboto';
           color: #1F2120; }
+        #header .inner .menuWeb #gnb > li .sub {
+          width: 1180px;
+          height: 300px;
+          position: absolute;
+          top: 60px;
+          right: -20px;
+          background: #fff;
+          display: none; }
+          #header .inner .menuWeb #gnb > li .sub::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background: #fff; }
+          #header .inner .menuWeb #gnb > li .sub::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            background: #fff; }
     #header .inner .menuWeb .util {
       position: absolute;
       top: 50%;
