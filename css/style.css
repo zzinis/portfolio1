@@ -487,6 +487,65 @@ fieldset {
           color: #222;
           text-align: center; }
 
+@media screen and (max-width: 1179px) {
+  .department .inner {
+    width: 100%;
+    padding: 0px 30px; }
+    .department .inner .top {
+      width: 100%;
+      height: 500px; }
+      .department .inner .top::before {
+        display: none; }
+      .department .inner .top .wrap {
+        padding: 0px; }
+        .department .inner .top .wrap h1 {
+          display: none; }
+        .department .inner .top .wrap .pic {
+          width: 300px;
+          position: initial;
+          margin-right: 5%; }
+        .department .inner .top .wrap .txt {
+          width: 60%;
+          position: initial; }
+          .department .inner .top .wrap .txt article {
+            padding: 0px 10px;
+            margin-bottom: 30px; }
+            .department .inner .top .wrap .txt article h2 {
+              font: bold 18px/1 'Overpass', sans-serif;
+              color: #222;
+              margin-bottom: 30px; }
+            .department .inner .top .wrap .txt article p {
+              font: 15px/1.4 'Overpass', sans-serif;
+              color: #222; }
+    .department .inner .contanier {
+      width: 100%;
+      position: relative;
+      padding: 0px;
+      margin-bottom: 100px; }
+      .department .inner .contanier .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px; }
+        .department .inner .contanier .row .box {
+          padding-left: 0px;
+          margin-bottom: 30px; }
+          .department .inner .contanier .row .box .icon {
+            position: initial;
+            margin-bottom: 20px; }
+          .department .inner .contanier .row .box .txt span {
+            margin-right: 20px; }
+    .department .inner .bottom {
+      width: 100%; }
+      .department .inner .bottom .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%; }
+        .department .inner .bottom .wrap article {
+          min-height: 200px;
+          flex-basis: 150px;
+          flex-grow: 1; }
+          .department .inner .bottom .wrap article:nth-of-type(4), .department .inner .bottom .wrap article:nth-of-type(8) {
+            margin-right: 20px; } }
 .community .sub_visual {
   background: url(../img/b5.jpg);
   background-size: cover;

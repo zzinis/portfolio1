@@ -214,3 +214,112 @@
         
     }
 }
+
+@media screen and(max-width:1179px) {
+
+    .department {
+        .inner {
+            width: 100%;
+            padding: 0px 30px;
+
+            .top{
+                width: 100%;
+                height: 500px;
+    
+                &::before{
+                    display: none;
+                }
+                
+                .wrap{
+                    padding: 0px;
+                    
+                    h1{
+                        display: none;
+                    }
+    
+                    .pic{
+                        width: 300px;
+                        position: initial;
+                        margin-right: 5%;
+                        
+                    }
+    
+                    .txt{
+                        width: 60%;
+                        position: initial;
+
+                        article{
+                            padding: 0px 10px;
+                            margin-bottom: 30px;
+                            h2{
+                                font: bold 18px/1 'Overpass', sans-serif;
+                                color: #222;
+                                margin-bottom: 30px;
+                            }
+                            p{
+                                font: 15px/1.4 'Overpass', sans-serif;
+                                color: #222;
+                            }
+                        }
+                    }
+    
+                }
+                
+            }
+    
+            .contanier{
+                width: 100%;
+                position: relative;
+                padding: 0px;
+                margin-bottom: 100px;
+                
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0px;
+    
+                    .box{
+
+                        padding-left: 0px;
+                        margin-bottom: 30px;
+    
+                        .icon{
+                            position: initial;
+                            margin-bottom: 20px;
+
+                        }
+    
+                        .txt{
+                            span{
+                                margin-right: 20px;
+                            }
+                        }
+    
+                    }
+                }
+            }
+            .bottom{
+                width: 100%;
+                .wrap{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1%;
+    
+                    article{
+                        min-height: 200px;
+                        flex-basis: 150px;
+                        flex-grow: 1;
+    
+                        &:nth-of-type(4),&:nth-of-type(8) {
+                            margin-right: 20px;
+                        }
+
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    
+}
