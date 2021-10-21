@@ -172,3 +172,48 @@
 
     
 }
+
+
+@media screen and (max-width:1179px) {
+    .youtube{
+        
+        .inner{
+            width: 100%;
+            padding: 0px 30px;
+    
+            .top{
+                .first{
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+                .second{
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+            }
+    
+            #vidGallery{
+            
+                article{
+                    
+                    .con{
+                        width: 100%;
+                        position: relative;
+                        bottom: 0;
+
+                        h2{
+                            font: bold 23px/1.2 'EB Garamond';
+                            margin-bottom: 20px;
+                            
+                        }
+                        
+                    }
+            
+                }
+            }
+        }
+    }
+    
+}

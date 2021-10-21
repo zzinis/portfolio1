@@ -1273,6 +1273,23 @@ fieldset {
       color: #aaa;
       margin-top: 20px; }
 
+@media screen and (max-width: 1179px) {
+  .youtube .inner {
+    width: 100%;
+    padding: 0px 30px; }
+    .youtube .inner .top .first {
+      display: flex;
+      justify-content: space-between; }
+    .youtube .inner .top .second {
+      display: flex;
+      justify-content: space-between; }
+    .youtube .inner #vidGallery article .con {
+      width: 100%;
+      position: relative;
+      bottom: 0; }
+      .youtube .inner #vidGallery article .con h2 {
+        font: bold 23px/1.2 'EB Garamond';
+        margin-bottom: 20px; } }
 body {
   width: 100%;
   overflow-x: hidden; }
