@@ -217,3 +217,42 @@
         
     }
 }
+
+@media screen and(max-width:1179px) {
+    .location{
+
+        .inner{
+            width: 100%;
+            padding: 0px 30px;
+            .contact{
+                width: 100%;
+                margin-bottom: 80px;
+    
+                .wrap{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+    
+                    .left{
+                        padding: 50px 20px;
+                    }
+    
+                    .right{
+                        width: 50%;
+                        padding: 30px 20px;
+                        p{
+                            &:nth-of-type(2){
+                                display: none;
+                            }
+                        }
+                    }
+
+                }
+            }
+    
+        }
+    
+            
+    }
+}
+    

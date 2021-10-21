@@ -1158,6 +1158,24 @@ fieldset {
             .location .inner .faq .wrap .right .box #wrap dd:nth-of-type(1) {
               display: block; }
 
+@media screen and (max-width: 1179px) {
+  .location .inner {
+    width: 100%;
+    padding: 0px 30px; }
+    .location .inner .contact {
+      width: 100%;
+      margin-bottom: 80px; }
+      .location .inner .contact .wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        .location .inner .contact .wrap .left {
+          padding: 50px 20px; }
+        .location .inner .contact .wrap .right {
+          width: 50%;
+          padding: 30px 20px; }
+          .location .inner .contact .wrap .right p:nth-of-type(2) {
+            display: none; } }
 .youtube {
   width: 100%;
   position: relative; }
