@@ -8,6 +8,10 @@
     >.inner{
         h1{
             text-align: center;
+
+            &::after{
+                display: none;
+            }
         }
                 
         p{

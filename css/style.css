@@ -734,6 +734,8 @@ fieldset {
     background: url(../img/c4.jpg) no-repeat center/cover; }
   .join > .inner h1 {
     text-align: center; }
+    .join > .inner h1::after {
+      display: none; }
   .join > .inner p {
     font: 15px/1 'Noto Sans KR';
     color: #888;
@@ -1100,8 +1102,7 @@ fieldset {
         color: #3c828c; }
     .location .inner .map #map {
       width: 980px;
-      height: 500px;
-      filter: grayscale(60%); }
+      height: 500px; }
   .location .inner .traffic {
     text-align: right;
     margin-top: 5px;
@@ -1112,7 +1113,7 @@ fieldset {
         width: 100px;
         height: 30px;
         font: 13px/30px '맑은 고딕';
-        background: #3c828c;
+        background: #111;
         color: #fff;
         display: block;
         text-align: center; }
