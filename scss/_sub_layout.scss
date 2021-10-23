@@ -208,32 +208,18 @@
         
 
         >h1{
-            font: 30px/1 'arial'; 
+            font: bold 26px/1 'Roboto'; 
             color:#000; 
             margin-bottom:50px; 
-            
-
-            // &::before{
-            //     content: '';
-            //     width: 25px;
-            //     height: 3px;
-            //     background-color: #219ea5;
-            //     display: block;
-            //     transform: rotate(90deg);
-            //     position: absolute;
-            //     top: 18px;
-            //     left: -10px;
-                
-            // }
-
-            span{
-                font:normal 20px/1 '맑은 고딕'; 
-                color:#aaa; 
-
-                &::before{
-                    content:'/'; margin-right:20px; margin-left:10px;  
-                }
+            &::after{
+                content: '';
+                display: block;
+                width: 15px;
+                height: 2px;
+                background: #111;
+                margin-top: 10px;
             }
+            
         }
     }
 }
