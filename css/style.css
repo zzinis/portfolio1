@@ -1499,6 +1499,33 @@ body {
                 font: 14px/1 'Open Sans';
                 color: #333;
                 transition: 0.5s; }
+        #header .inner .menuWeb #gnb > li.m_community .sub .right {
+          display: flex; }
+          #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 {
+            display: flex;
+            width: 60%;
+            margin-right: 4%; }
+            #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 article {
+              margin-right: 40px; }
+              #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 article p {
+                font: bold 15px/1 'Open Sans';
+                margin-bottom: 10px; }
+              #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 article span {
+                font: 13px/1.4 'Open Sans'; }
+          #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con2 ul li {
+            text-align: left;
+            padding: 5px 0;
+            float: left; }
+            #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con2 ul li a {
+              font: 14px/1 'Open Sans';
+              color: #333;
+              transition: 0.5s;
+              margin-bottom: 10px;
+              display: block;
+              margin-right: 50px; }
+          #header .inner .menuWeb #gnb > li.m_community .sub .right .sub_con2 .pic img {
+            width: 400px;
+            height: 150px; }
     #header .inner .menuWeb .util {
       position: absolute;
       top: 50%;

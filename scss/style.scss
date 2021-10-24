@@ -236,6 +236,58 @@ body{
                         }
                         
                     }
+                    &.m_community{
+                        .sub{
+                            .right{
+                                display: flex;
+                                
+                                .sub_con1{
+                                    display: flex;
+                                    width: 60%;
+                                    margin-right: 4%;
+                                    article{
+                                        margin-right: 40px;
+                                        p{
+                                            font: bold 15px/1 'Open Sans';
+                                            margin-bottom: 10px;
+                                        }
+                                        span{
+                                            font: 13px/1.4 'Open Sans';
+                                        }
+
+                                    }
+                                }
+                                .sub_con2{
+                                    ul {
+                                        
+                                        li {
+                                            text-align: left;
+                                            padding: 5px 0;
+                                            float: left;
+                                            
+                                            
+                                            a {
+                                                font: 14px/1 'Open Sans';
+                                                color: #333;
+                                                transition: 0.5s;
+                                                margin-bottom: 10px;
+                                                display: block;
+                                                margin-right: 50px;
+                                            }
+                                        }
+                                    }
+                                    .pic{
+                                        img{
+                                            width: 400px;
+                                            height: 150px;
+                                        }
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                    }
 
                 }
             }
