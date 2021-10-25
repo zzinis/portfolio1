@@ -75,7 +75,7 @@ body{
                             position: absolute;
                             top: 0;
                             left: -100%;
-                            background: #fff;
+                            background: #e1e1e1;
                         }
                         &::after{
                             content: '';
@@ -217,6 +217,12 @@ body{
                                     h3{
                                         margin-bottom: 10px;
                                         font: bold 17px/1 'Open Sans';
+                                        &::after {
+                                            display: block;
+                                            content: '';
+                                            border: 1px solid #949292;
+                                            margin-top: 10px;
+                                        }
                                     }
                                     ul {
                                         li {
@@ -248,7 +254,7 @@ body{
                                     article{
                                         margin-right: 40px;
                                         p{
-                                            font: bold 15px/1 'Open Sans';
+                                            font: 15px/1 'Open Sans';
                                             margin-bottom: 10px;
                                         }
                                         span{
@@ -267,7 +273,7 @@ body{
                                             
                                             
                                             a {
-                                                font: 14px/1 'Open Sans';
+                                                font: bold 14px/1 'Open Sans';
                                                 color: #333;
                                                 transition: 0.5s;
                                                 margin-bottom: 10px;
@@ -288,6 +294,124 @@ body{
                             }
                         }
                     }
+                    &.m_gallery{
+                        .sub{
+                            .right{
+                                display: flex;
+
+                                .sub_con1{
+                                    width: 400px;
+                                    padding: 20px 30px;
+                                    border-right: 1px solid #bbb;
+
+                                    h3{
+                                        margin-bottom: 10px;
+                                        font: bold 17px/1 'Open Sans';
+
+                                        &::after {
+                                            display: block;
+                                            content: '';
+                                            width: 80px;
+                                            height: 2px;
+                                            background: #949292;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                    ul {
+                                        li {
+                                            text-align: left;
+                                            padding: 5px 0;
+                                            box-sizing: border-box;
+        
+                                            a {
+                                                font: 14px/1 'Open Sans';
+                                                color: #333;
+                                                transition: 0.5s;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                                .sub_con2{
+
+                                    width: auto;
+                                    padding: 20px 50px;
+                                    
+                                    img{
+                                        width: 450px;
+                                        height: 200px;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        
+                    }
+                    &.m_location{
+                        .sub{
+                            .right{
+                                position: relative;
+                                .top{
+                                    
+                                    h3{
+                                        font: 25px/1 'EB Garamond';
+                                        color: #434343;
+                                        margin-bottom: 20px; 
+                                        text-align: center;
+                                        padding-left: 180px;
+                                    }
+                                }
+                                .sub_con2{
+                                    position: absolute;
+                                    left: 220px;
+                                    top: 70%;
+                                    article{
+                                        width: 160px;
+                                        height: 150px;
+                                        margin: 10px 15px;
+                                        float: left;
+                                        padding: 10px;
+    
+                                        >p{
+                                            margin-bottom: 10px;
+    
+                                            &::after {
+                                                display: block;
+                                                content: '';
+                                                border: 1px solid #bbb;
+                                                margin-top: 10px;
+                                            }
+                                            a{
+                                                font: bold 16px/1 'Open Sans';
+                                            }
+                                        }
+                                        span{
+                                            font: 13px/1.3 'Open Sans';
+                                            color: #434343;
+                                        }
+                                        strong{
+                                            font: 13px/1.3 'Open Sans';
+                                            color: #434343;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+
+                                
+                                .pic{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 10px;
+                                    img{
+                                        width: 200px;
+                                        height: 300px;
+                                    }
+                                }
+                            }
+                        }   
+                        
+                    }
+                    
 
                 }
             }
