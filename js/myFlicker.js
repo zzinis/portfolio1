@@ -23,6 +23,7 @@ $.ajax({
         if(!data.title){
             text = "No description in this photo"; 
         }
+        
 
         $("#gallery ul")
             .append(
@@ -53,6 +54,23 @@ $.ajax({
                     )
             )
     })
+    const total = $("#gallery ul li").length;
+    let imgNum=0;
+
+    $("#gallery img").each(function(index, data){   
+        
+        data.onload = function(){            
+            imgNum++;
+            console.log(imgNum);
+
+            if(imgNum === total*2){   
+                
+                $(".loading").addClass("off");
+
+                $("#gallery ul").addClass("on");
+            }
+        }        
+    }); 
 })
 .error(function(err){
     console.err("데이터를 호출하는데 실패했습니다"); 
