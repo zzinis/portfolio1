@@ -53,7 +53,8 @@ fieldset {
       margin-right: 2%; }
       #header_sub .inner .menuWeb #gnb > li {
         display: inline-block;
-        margin-left: 28px; }
+        margin-left: 28px;
+        padding: 30px 0; }
         #header_sub .inner .menuWeb #gnb > li a {
           font: 14px/1 'Roboto';
           color: #1F2120; }
