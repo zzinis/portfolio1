@@ -11,11 +11,11 @@ btnCall.onclick = function(e){
 
 
 $("#gnb>li").on("mouseenter", function(){
-    $(this).find(".sub").show();
+    $(this).find(".sub").slideDown();
 });
 
 $("#gnb>li").on("mouseleave", function(){
-    $(this).find(".sub").hide();
+    $(this).find(".sub").slideUp();
 })
 
 $("#gnb>li").each(function(index){

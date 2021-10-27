@@ -4,6 +4,7 @@ $("input[type=submit]").on("click", function(e){
     if(!isName("username")) e.preventDefault(); 
     if(!isPwd("pwd1", "pwd2", 5)) e.preventDefault(); 
     if(!isEmail("email")) e.preventDefault();
+
 }); 
 
 function isTxt(name, len){
@@ -79,4 +80,3 @@ function isEmail(name) {
         ); 
         return false; 
     }
-}
