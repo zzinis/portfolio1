@@ -1259,8 +1259,6 @@ fieldset {
             transform: rotate(90deg) translate(-54px, 150px); }
           .gallery .inner #gallery ul li .profile {
             padding: 10px; }
-            .gallery .inner #gallery ul li .profile img {
-              display: none; }
             .gallery .inner #gallery ul li .profile span {
               font: 15px/1 'Open Sans';
               color: #fff;

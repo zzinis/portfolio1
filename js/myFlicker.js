@@ -46,9 +46,6 @@ $.ajax({
                     .append(
                         $("<div class='profile'>")
                             .append(
-                                $("<img>").attr({
-                                    src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
-                                }),
                                 $("<span>").text(data.owner)
                             )
                     )
@@ -63,7 +60,7 @@ $.ajax({
             imgNum++;
             console.log(imgNum);
 
-            if(imgNum === total*2){   
+            if(imgNum === total){   
                 
                 $(".loading").addClass("off");
 
