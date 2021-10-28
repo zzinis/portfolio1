@@ -1332,18 +1332,23 @@ fieldset {
     .location .inner .map .store {
       width: 200px;
       border-right: 1px solid #111;
-      padding: 30px 20px 30px 30px; }
+      padding: 50px 20px 30px 30px;
+      background: #0a0000fb; }
       .location .inner .map .store p a {
-        font: 14px/1.4 '맑은고딕';
-        margin-bottom: 25px;
+        font: 14px/1.4 'Noto Sans KR';
+        margin-bottom: 30px;
         letter-spacing: -0.4px;
-        color: #bdbcbc;
+        color: #fff;
         display: block; }
       .location .inner .map .store p.on a {
-        color: #3c828c; }
+        font-weight: bold;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px; }
     .location .inner .map #map {
       width: 980px;
-      height: 500px; }
+      height: 500px;
+      filter: grayscale(1); }
   .location .inner .traffic {
     text-align: right;
     margin-top: 5px;
