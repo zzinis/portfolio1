@@ -92,7 +92,8 @@ fieldset {
             background: #f5f2ee; }
             #header_sub .inner .menuWeb #gnb > li .sub .left h2 {
               font: bold 18px/1 'Roboto';
-              text-align: center; }
+              text-align: center;
+              padding: 20px 0; }
           #header_sub .inner .menuWeb #gnb > li .sub .right {
             width: 70%;
             float: left;
@@ -108,7 +109,7 @@ fieldset {
               font: bold 17px/1 'Open Sans';
               color: #555;
               text-align: left;
-              padding: 20px 30px 10px; }
+              padding: 10px 30px; }
               #header_sub .inner .menuWeb #gnb > li.m_depart .sub .right .sub_con1 h3::after {
                 display: block;
                 content: '';
@@ -184,7 +185,8 @@ fieldset {
           #header_sub .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 {
             display: flex;
             width: 60%;
-            margin-right: 4%; }
+            margin-right: 4%;
+            padding: 20px 0; }
             #header_sub .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 article {
               margin-right: 40px; }
               #header_sub .inner .menuWeb #gnb > li.m_community .sub .right .sub_con1 article p {
