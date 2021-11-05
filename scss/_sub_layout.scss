@@ -37,6 +37,7 @@
                     margin-left: 28px;
                     padding: 35px 0;
                     
+
                     a{
                         font: 14px/1 'Roboto';
                         color: #1F2120;
@@ -141,7 +142,7 @@
                                         font: bold 17px/1 'Open Sans';
                                         color: #555;
                                         text-align: left;
-                                        padding: 20px 30px 10px;
+                                        padding: 10px 30px;
         
                                         &::after {
                                             display: block;
@@ -186,6 +187,7 @@
                     }
                     &.m_youtube{
                         .sub{
+                            
                             .right{
                                 display: flex;
 

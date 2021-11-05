@@ -579,12 +579,13 @@ body{
             width: 10px;
             height: 10px;
             border-radius: 5px;
-            background: #888;
+            background: #b1b0b0;
             transition: 0.5s;
 
             &.on{
-                background: #111;
-                height: 30px;
+                background: #fdbe8a;
+                height: 25px;
+                border-radius: 3px;
             }
         }
     }
