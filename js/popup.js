@@ -1,31 +1,30 @@
-var isCookie = document.cookie.indexOf("popup=done");
-console.log(isCookie);
+class CookiePop {
+    constructor(opt){
+       this.cookieName = opt.name;
+       this.popup = document.querySelector(opt.popup);
+       this.btnClose = this.popup.querySelector(".close");
+       this.isCookie = document.cookie.indexOf(this.cookieName);
+       this.isOn;
+ 
+       (this.isCookie == -1) ? this.isOn = "block" : this.isOn = "none"; 
+       this.popup.style.display = this.isOn;   
+ 
+       this.btnClose.addEventListener("click", e=>{
+          e.preventDefault();
+          this.popup.style.display = "none";
+ 
+          let isChecked = this.popup.querySelector("input[type=checkbox]").checked;
+          if(isChecked) this.setCookie(this.cookieName, 1);        
+       })
+     
+    }
+ 
+    setCookie(name, due){
+       const today = new Date();
+       const date = today.getDate();
+       today.setDate(date+due);
+       const duedate = today.toGMTString();
+       document.cookie = `${name}; path=/; expires=${duedate}`;
+    }
+ }
 
-if(isCookie == -1){
-    $("#popup").show();
-    console.log("쿠키없음");
-}else{
-    $("#popup").hide();
-    console.log("쿠키있음");
-}
-
-$("#popup .close").on("click", function(e){
-    e.preventDefault();
-
-    var isChecked = $("#popup").find("input[type=checkbox]").is(":checked");
-
-    if(isChecked) setCookie(1);
-    $("#popup").hide();
-
-});
-
-function setCookie(time){
-    var today = new Date();
-    var date = today.getDate();
-
-    today.setDate(date + time);
-
-    var duedate = today.toGMTString();
-
-    document.cookie = "popup=done; expires="+duedate;
-}
