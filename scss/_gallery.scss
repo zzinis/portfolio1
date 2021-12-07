@@ -46,9 +46,10 @@
         }
 
 
-        #gallery{
+        #wrap{
             width: 100%;
             position: relative;
+
             .loading{
                 width: 150px;
                 height: 150px;
@@ -60,17 +61,20 @@
                 }
             }
 
-            ul{
+            #list{
                 width: 100%;
-                display: flex;
-                flex-wrap: wrap;
+                height: 100%;
+                &::after { content: ''; display: block; clear: both;}
+                transition: 0.4s;
 
-                li{
+                .item{
                     width: 380px;
                     background: #d1ccbf;
                     margin-right: 20px;
                     margin-bottom: 20px;
                     transition: 0.5s;
+                    float: left;
+                    
                     &:nth-of-type(3n){
                         margin-right: 0px;
                     }
@@ -123,6 +127,29 @@
         }
     }
 }
+aside {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    display: block;
+    box-sizing: border-box;
+    padding: 80px;
+
+    img {
+        width: 100%; height: 100%;
+        object-fit: contain; object-position: center;
+    }
+    span {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
 
 
 @media screen and(max-width:1179px) {
@@ -134,12 +161,18 @@
         .inner{
             width: 100%;
     
-            #gallery{
+            #wrap{
+                
+                .loading{
+                    display: none;
+                }
     
-                ul{
+                #list{
+                    display: flex;
+                    flex-wrap: wrap;
                     gap: 1%;
-    
-                    li{
+
+                    .item{
                         min-height: 200px;
                         flex-basis: 250px;
                         flex-grow: 1;
