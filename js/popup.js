@@ -1,6 +1,5 @@
 class CookiePop {
     constructor(opt){
-
         this.cookieName = opt.name;
         this.popup = document.querySelector(opt.popup);
         this.btnClose = this.popup.querySelector(".close");

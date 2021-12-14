@@ -1557,9 +1557,9 @@ fieldset {
           transition: 0.5s;
           filter: grayscale(0); }
 
-.pop {
+aside {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -1567,31 +1567,19 @@ fieldset {
   display: block;
   box-sizing: border-box;
   padding: 80px; }
-  .pop .iframe {
-    width: 50px;
+  aside iframe {
+    width: 90%;
+    height: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .pop span {
+  aside span {
     position: absolute;
     top: 20px;
     right: 20px;
     color: #fff;
     cursor: pointer; }
-  .pop .con {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    display: none; }
-    .pop .con h2 {
-      font: bold 40px/1 'Open Sans';
-      color: #ddd;
-      margin-top: 40px; }
-    .pop .con p {
-      font: 20px/1.3 'Open Sans';
-      color: #aaa;
-      margin-top: 20px; }
 
 @media screen and (max-width: 1179px) {
   .youtube .inner {
@@ -1609,7 +1597,17 @@ fieldset {
       bottom: 0; }
       .youtube .inner #vidGallery article .con h2 {
         font: bold 23px/1.2 'EB Garamond';
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+
+  aside {
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 243, 243, 0.9); }
+    aside iframe {
+      width: 90%;
+      height: 500px; }
+    aside span {
+      color: #111; } }
 body {
   width: 100%;
   overflow-x: hidden; }
