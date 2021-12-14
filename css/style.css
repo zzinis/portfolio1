@@ -2462,7 +2462,7 @@ body {
 #popup {
   width: 400px;
   background: #d1ccbf;
-  height: 250px;
+  height: 240px;
   padding: 40px;
   position: absolute;
   left: 50%;
@@ -2475,6 +2475,7 @@ body {
     padding: 20px 0; }
     #popup .content img {
       width: 50px;
+      height: 50px;
       display: block;
       margin: 0 auto;
       margin-bottom: 20px; }
