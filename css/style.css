@@ -1969,7 +1969,7 @@ body {
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 8; }
+  z-index: 3; }
   #navi li {
     margin: 20px 0; }
     #navi li a {
@@ -1979,10 +1979,13 @@ body {
       border-radius: 5px;
       background: #b1b0b0;
       transition: 0.5s; }
-      #navi li a.on {
-        background: #fdbe8a;
-        height: 25px;
-        border-radius: 3px; }
+    #navi li.on {
+      background: #fdbe8a;
+      height: 25px;
+      border-radius: 3px;
+      z-index: 2; }
+      #navi li.on a {
+        display: none; }
 
 #visual {
   width: 90%;
